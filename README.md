@@ -1,3 +1,3 @@
 # Marine_het_bacteria-copper
 
-test
+Repository for data and scripts for Frontiers in Marine Sciences publication
