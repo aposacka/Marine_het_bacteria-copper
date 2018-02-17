@@ -55,17 +55,52 @@ Phosph_metals <-data%>%
 Phosph_metals <- na.omit(Phosph_metals)
 
 # average ratios for each strain and at each copper level
-Phosph_Metals_summary <-Phosph_metals %>%
+Phosph_metals_summary <-Phosph_metals %>%
   group_by(Me_P,Strain,Cu_level)%>%
   summarise(mean_quota =mean(Quota), 
             stdev=sd(Quota),
             SEM= stdev/sqrt(n()),
             (n()))
 
-# write.csv(Descr_stats,"Macro_ratios-from-TMs-final.csv")
+# write.csv(Phosph_metals_summary,"Phosph_metals_summary.csv")
 
 #-----------------------Metals-normalized-to-C-----------------
 
+Carb_metals <-data%>%
+  select(Strain,Cu_level,Fe_C,Zn_C,Mn_C,Cu_C,Co_C)%>%
+  gather(key="Me_C", value="Quota",
+         Fe_C,Zn_C,Mn_C,Cu_C,Co_C)
 
+# remove missing values from the dataset
+Carb_metals <- na.omit(Carb_metals)
 
+# average ratios for each strain and at each copper level
+Carb_metals_summary <-Carb_metals %>%
+  group_by(Me_C,Strain,Cu_level)%>%
+  summarise(mean_quota =mean(Quota), 
+            stdev=sd(Quota),
+            SEM= stdev/sqrt(n()),
+            (n()))
+
+# write.csv(Carb_metals_summary,"Carb_metals_summary.csv")
 #----------------------Metals-normalized-to-cell-number--------
+
+Cell_metals <-data%>%
+  select(Strain,Cu_level,Cellular_Fe,Cellular_Zn, Cellular_Mn,Cellular_Cu, Cellular_Co)%>%
+  gather(key="Me_cell", value="Quota",
+         Cellular_Fe,Cellular_Zn, Cellular_Mn,Cellular_Cu, Cellular_Co)
+
+# remove missing values from the dataset
+Cell_metals <- na.omit(Cell_metals)
+
+# average ratios for each strain and at each copper level
+Cell_metals_summary <-Cell_metals %>%
+  group_by(Me_cell,Strain,Cu_level)%>%
+  summarise(mean_quota =mean(Quota), 
+            stdev=sd(Quota),
+            SEM= stdev/sqrt(n()),
+            (n()))
+
+# write.csv(Cell_metals_summary,"Cell_metals_summary.csv")
+# ---------------------the end-------------------------------------
+
