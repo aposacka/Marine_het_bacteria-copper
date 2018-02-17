@@ -1,0 +1,105 @@
+---
+title: "Statistical analysis for Cu quotas: eukaryotic algae versus het. bacteria"
+author: "Ania"
+date: "January 15, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Testing the differences in macronutrient ratios and metal quotas of eukaryotic algae and het. bacteria
+
+Question: "Are metal quotas (Me:C) of bacteria and phytoplankton different?"
+
+Null hypothesis : "Metal quotas (Me:C medians) of bacteria and phytoplankton are equal"
+
+Considerations:
+
+* assess if data is normally distributed (assessed wity qqPlot in package car)
+* assess if variances are equal Levene test for normally distributed data and F-test for non-normally distributed data
+* bacteria datasets contain observations of 5 quotas for each species, therefore are not independent observations, pseudoreplicates *
+
+### Statistical tests
+
+Tests for homogeneity of variances:  
+
+* Levene's test (for non-normally distributed data)
+* F test (for normally distributed data)
+* Bartlette test (sensitive to departures from normality)
+
+Testing differences between two samples:  
+
+* Wilcoxon Rank Sum test, also known as Mann-Whitney test. It is a nonparametric test of the null hypothesis that it is equally likely that a randomly selected value from one sample will be less than or greater than a randomly selected value from a second sample. Does not assume normal distribution
+
+* Moods median test: two sample version of the Sign Test, is used to determine whether the median of two independent samples are equal. Since p-value = .0405 < .05 = α, we reject the null-hypothesis, and conclude there is a significant difference between the two population medians.
+
+* Welch t-test, for unequal variances but assumes normal distribution
+
+> Running the tests
+
+## 1. Preparing the data
+
+```{r message=FALSE}
+
+# load the data from csv
+library(tidyverse)
+data <-read_csv("C:/Users/Ania/Bact_Stoichiometry/Frontiers/Copper_to-carbon-ratios-compilation/Cu_quotas-synthesis-Aquil.csv") 
+glimpse(data)
+
+# sort out the variable formats
+data$Strategy <- as.factor(data$Strategy)
+data$Taxon<- as.factor(data$Taxon)
+data$Species<- as.factor(data$Species)
+data$Domain<- as.factor(data$Domain)
+```
+
+
+## 2 Subsetting
+Note, there is an crazy outlier in the phytoplakton data @ Cu:C of 30, this is not included in the test
+
+```{r message=FALSE}
+data_no_cyano <- data%>% filter(Cu_C<20, Domain %in% c("Euk_algae","Het_bacteria"))
+
+```
+
+
+## 3. Assessing normalitey. 
+Note, data points fall outside the 95% confidence intervals suggesting non-normal distribution of data
+
+```{r message=FALSE}
+
+library(car)
+qqPlot(data_no_cyano$Cu_C)
+
+```
+
+## 4. Testing for equality of variances
+
+Variances are NOT equal as p= 0.027
+
+```{r message=FALSE}
+
+leveneTest (Cu_C~Domain, data=data_no_cyano)
+
+# or F-test if data were to be normally distributed
+# var.test(Cu_C~Domain, data=data_no_cyano) - this is F-test
+```
+
+### 5. Non parametric tests
+
+#####Wilcox Rank sum test (Mann-Whitney U test) and Moods median test (for further exploration). Result: since p-value for both Wilcox and Moods median is >0.05, we reject accept the null hypothesis that Cu quotas of bacteria and phytoplankton on this dataset are the same (significantly not different)
+
+```{r message=FALSE}
+
+wilcox.test(Cu_C~Domain, data=data_no_cyano)
+
+library(RVAideMemoire)
+mood.medtest(Cu_C ~ Domain,
+						 data = data_no_cyano)
+
+```
+
+
+
