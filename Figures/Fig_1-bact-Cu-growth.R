@@ -56,9 +56,9 @@ p1 <-copper%>%
 	group_by(Strain,Cu_level,Me_P)%>%
 	summarise(mean_q=mean(Quota))%>%
 	ggplot(aes(x = Cu_level,y = mean_q,color = Strain, group = 1))+
-	geom_point(data=copper,aes(x = Cu_level,y = Quota, color= Strain), size = 1.5, alpha = 1/6)+
-  scale_color_manual(values=c("#F8766D", "#00BA38", "#619CFF","#666666"))+
-	stat_summary(fun.y=mean, geom="point",size = 1.5)+
+	geom_point(data=copper,aes(x = Cu_level,y = Quota, color= Strain), size = 1.75, alpha = 1/6)+
+  scale_color_manual(values=c("#009E73", "#999999", "#E69F00","#0072B2"))+
+	stat_summary(fun.y=mean, geom="point",size = 1.75)+
 	facet_wrap(~Strain, scales = "free_y",nrow = 1)+
 	geom_line(linetype="dashed")+
 	ylab(expression(atop("Cu quota", 
@@ -67,12 +67,12 @@ p1 <-copper%>%
   theme_bw()+
   theme(legend.position = "none",
 				axis.title = element_blank(),
-				strip.text = element_text(size=5),
+				strip.text = element_blank(),
 				panel.grid.major.x = element_blank(), 
 				panel.grid.minor.x = element_blank(),
 				panel.grid.major.y = element_blank(),
 				panel.grid.minor.y = element_blank(),
-  			axis.text = element_text(size=5))
+  			axis.text = element_text(size=6))
 
 #------------------------------------------------------------------------
 # growth rates [top]
@@ -83,9 +83,9 @@ p2 <- subset%>%
   group_by(Strain,Cu_total)%>%
   summarise(mean_q=mean(mu_day))%>%
   ggplot(aes(x = Cu_total,y = mean_q,color = Strain, group = 1))+
-  geom_point(data=subset,aes(x = Cu_total,y = mu_day, color=Strain), size = 1.5, alpha = 1/6)+
-  scale_color_manual(values=c("#F8766D", "#00BA38", "#619CFF","#666666"))+
-  stat_summary(fun.y=mean, geom="point",size = 1.5)+
+  geom_point(data=subset,aes(x = Cu_total,y = mu_day, color=Strain), size = 1.75, alpha = 1/6)+
+  scale_color_manual(values=c("#009E73", "#999999", "#E69F00","#0072B2"))+
+  stat_summary(fun.y=mean, geom="point",size = 1.75)+
   facet_wrap(~Strain, scales = "free_y",nrow = 1)+
   geom_line(linetype="dashed")+
   ylab ("Growth rate (d-1)")+
@@ -93,18 +93,18 @@ p2 <- subset%>%
   theme_bw()+
   theme(legend.position = "none",
         axis.title = element_blank(),
-        strip.text = element_text(size=5),
+        strip.text = element_blank(),
         panel.grid.major.x = element_blank(), 
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_blank(),
         panel.grid.minor.y = element_blank(),
-        axis.text = element_text(size=5))
+        axis.text = element_text(size=6))
 
-
-#~~~~~~~~~~~~~~~save plot~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#------------------------------------------------------------------
+# saving the plot
 
 plot <-plot_grid(p2,p1,align = "v",nrow=2)
 
-save_plot (filename="Fig_1.tiff", plot= plot, base_height= 3, base_width=5)
+save_plot (filename="Fig_1.tiff", plot= plot, base_height= 2.5, base_width=5)
 
 
