@@ -8,7 +8,7 @@ library(cowplot)
 
 # loading data
 metal_data <-read_csv("Datasets/Bact_phosph_metals.csv") 
-growth <-read_csv("Datasets/GR_rates-bact-figs.csv")
+growth <-read_csv("Datasets/Bact_growth-rates.csv")
 
 
 #metal_data$Strain <- as.factor(metal_data$Strain)
