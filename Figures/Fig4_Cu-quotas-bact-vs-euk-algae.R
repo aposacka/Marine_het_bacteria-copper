@@ -37,9 +37,9 @@ p1 <- data%>%
 				legend.text = element_text(size=10),
 				legend.position = "none")
 
-save_plot (filename="Fig4_Bact_vs_Phytos.tiff", plot= plot, base_height= 4, base_width =9.5)
+save_plot (filename="Fig4_Bact_vs_Phytos.tiff", plot= p1, base_height= 4, base_width =9.5)
 
 #-----------------------------STATISTICAL ANALYSIS---------------------------------------------
 
-
+p1
 

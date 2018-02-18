@@ -1,6 +1,6 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~README~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Script to produce a figure with metals:p at various Cu levels in 4 strains 
-# of henetrotrophic bacteria
+# of henetrotrophic bacteria Fig.1 in Frontiers in Marine Science
 
 # loading packages
 library(tidyverse)
@@ -44,51 +44,67 @@ subset$Strain<-factor(subset$Strain, levels = c("Dokdonia sp","R.pomeroyi",
 # ----------------------------------------------------------------------------
 # Cu quota plot [bottom]
 
+# need to create an excerpt so that I can overlay individual data points
+# over the means
 copper<-metal_data%>%
   filter(Me_P=="Cu_P")
+
+# renaming the factors to what I want them to appear like in the strip
+levels(copper$Strain) <- c("Dokd-P16", "R.pomeroyi", "PAlt-P2", "PAlt-P26")
 
 p1 <-copper%>%
 	group_by(Strain,Cu_level,Me_P)%>%
 	summarise(mean_q=mean(Quota))%>%
-	ggplot(aes(x = Cu_level,y = mean_q,group = 1))+
+	ggplot(aes(x = Cu_level,y = mean_q,color = Strain, group = 1))+
 	geom_point(data=copper,aes(x = Cu_level,y = Quota, color= Strain), size = 1.5, alpha = 1/6)+
+  scale_color_manual(values=c("#F8766D", "#00BA38", "#619CFF","#666666"))+
 	stat_summary(fun.y=mean, geom="point",size = 1.5)+
 	facet_wrap(~Strain, scales = "free_y",nrow = 1)+
 	geom_line(linetype="dashed")+
-#	ylab(expression(atop("Cu quota", 
-#										 paste("(mmol Cu:mol P)"))))+
-	ylim(0,0.23)+
-	theme(legend.position = "none",
-				strip.text= element_blank(),
-				axis.title.x = element_blank(),
-			  axis.title.y = element_blank(),
-  			axis.text = element_text(size=6),
- 	  		axis.title = element_text(size=6))
+	ylab(expression(atop("Cu quota", 
+								 paste("(mmol Cu:mol P)"))))+
+  ylim(0,0.23)+
+  theme_bw()+
+  theme(legend.position = "none",
+				axis.title = element_blank(),
+				strip.text = element_text(size=5),
+				panel.grid.major.x = element_blank(), 
+				panel.grid.minor.x = element_blank(),
+				panel.grid.major.y = element_blank(),
+				panel.grid.minor.y = element_blank(),
+  			axis.text = element_text(size=5))
 
 #------------------------------------------------------------------------
 # growth rates [top]
 
+levels(subset$Strain) <- c("Dokd-P16", "R.pomeroyi", "PAlt-P2", "PAlt-P26")
+
 p2 <- subset%>%
   group_by(Strain,Cu_total)%>%
   summarise(mean_q=mean(mu_day))%>%
-  ggplot(aes(x = Cu_total,y = mean_q,group = 1))+
+  ggplot(aes(x = Cu_total,y = mean_q,color = Strain, group = 1))+
   geom_point(data=subset,aes(x = Cu_total,y = mu_day, color=Strain), size = 1.5, alpha = 1/6)+
-  stat_summary(fun.y=mean, geom="point",size = 1.5, color="CCCCCC")+
+  scale_color_manual(values=c("#F8766D", "#00BA38", "#619CFF","#666666"))+
+  stat_summary(fun.y=mean, geom="point",size = 1.5)+
   facet_wrap(~Strain, scales = "free_y",nrow = 1)+
   geom_line(linetype="dashed")+
+  ylab ("Growth rate (d-1)")+
   ylim(1,23)+
+  theme_bw()+
   theme(legend.position = "none",
-        strip.text= element_blank(),
-        axis.title.x = element_blank(),
-        axis.title.y = element_blank(),
-        axis.text = element_text(size=6),
-        axis.title = element_text(size=6))
+        axis.title = element_blank(),
+        strip.text = element_text(size=5),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        axis.text = element_text(size=5))
 
 
 #~~~~~~~~~~~~~~~save plot~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 plot <-plot_grid(p2,p1,align = "v",nrow=2)
 
-save_plot (filename="Fig_1.tiff", plot= plot, base_height= 2.5, base_width=5)
+save_plot (filename="Fig_1.tiff", plot= plot, base_height= 3, base_width=5)
 
 
