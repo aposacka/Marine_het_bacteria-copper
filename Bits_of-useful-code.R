@@ -8,3 +8,9 @@ data$Metal <- factor(data$Metal,levels = c("Fe_P","Zn_P","Cu_P","Mn_P", "Co_P"))
 
 # check it's changed to what you wanted
 levels(data$Me_P)
+
+# For the workshop: ggplot stuff
+#
+# 1. Show how to change colors 
+# 2. Show how to reorder yoour factors for better vis
+# 3. Practices for writing code
