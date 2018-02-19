@@ -6,7 +6,7 @@
 library(tidyverse)
 library(cowplot)
 
-data <-read_csv("C:/Users/Ania/Bact_Stoichiometry/Frontiers/Copper_to-carbon-ratios-compilation/Cu_quotas-synthesis-Aquil.csv") 
+data <-read_csv("Datasets/Cu_quotas-synthesis-Aquil.csv") 
 
 #glimpse(data)
 
@@ -72,5 +72,6 @@ bact<-data%>%
 
 plot <-plot_grid(phytos,bact,
 								 labels = c("A", "B"),label_size = 12, align = "h")
+plot
 
 save_plot (filename="Fig.6.tiff", plot= plot, base_height= 4, base_width =9.5)
