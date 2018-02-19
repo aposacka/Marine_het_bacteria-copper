@@ -13,7 +13,7 @@ data$Macronutrient <-as.factor(data$Macronutrient)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # function to calculate standard error
-se <- function(x){sd(x)/sqrt(length(x))}
+# se <- function(x){sd(x)/sqrt(length(x))}
 
 # setting the levels (order) of factors for plotting
 data$Strain<- factor(data$Strain, levels = c("Dokdonia sp","R.pomeroyi",
@@ -28,27 +28,26 @@ data$Macronutrient <- factor(data$Macronutrient,
 #~~~~~~~subsetting~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # subset each macronutrient
-carb <- data%>%
-	filter(Macronutrient=="Carbon")
-nitrogen <- data%>%
-	filter(Macronutrient=="Nitrogen")
-phosph <- data%>%
-	filter(Macronutrient=="Phosphorous")
-sulf <- data%>%
-	filter(Macronutrient=="Sulfur")
+
+
+
 CN <- data%>%
 	filter(Macronutrient=="C:N ratio")
 SP <- data%>%
 	filter(Macronutrient=="S:P ratio")
 
 #~~~~~~~plots~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+carb <- data%>%
+  filter(Macronutrient=="Carbon")
+
 p1 <- carb%>%
 	group_by(Strain,Cu_level,Macronutrient)%>%
-	summarise(mean_q=mean(Quota_num),sderr=se(Quota_num))%>%
-	ggplot(aes(x=Cu_level,y=mean_q,group=1))+
-	stat_summary(fun.y=mean, geom="point",size=4, pch=21,stroke=1.2)+
-	geom_errorbar(aes(ymin=mean_q-sderr, ymax=mean_q+sderr),width=.2,size=0.7)+
-	geom_point(data=carb,aes(x=Cu_level,y=Quota_num),alpha=1/4,size=3,color="#666666")+
+	summarise(mean_q = mean(Quota_num))%>%
+	ggplot(aes(x=Cu_level,y=mean_q,color = Strain, group=1))+
+	stat_summary(fun.y=mean, geom="point",size = 4)+
+	geom_point(data=carb,aes(x = Cu_level,y = Quota_num, color = Strain),alpha=1/6,size=3)+
+  scale_color_manual(values=c("#009E73", "#999999", "#E69F00","#0072B2"))+
 	facet_wrap(~Strain, scales = "free_y", nrow=1)+
 	ylab(expression(atop("C quota", 
 											 paste(~(fmol~C~cell^{-1})))))+
@@ -56,85 +55,94 @@ p1 <- carb%>%
 					 label= c("Dokd-P16","R. pomeroyi",
 					 				 "PAlt-P2","PAlt-P26"),size=3.5) +
 	ylim(3,40)+
+  theme_bw()+
 	theme(legend.position = "none",
 				strip.text= element_blank(),
-				panel.grid.minor.x = element_blank(),
-				panel.grid.major.x = element_blank(),
 				axis.title.x = element_blank(),
 				axis.text = element_text(size=14),
-				axis.title = element_text(size=11),
+				axis.title.y = element_text(size=11),
 				legend.text = element_text(size=14))
+
+
+nitrogen <- data%>%
+  filter(Macronutrient=="Nitrogen")
 
 
 p2 <- nitrogen%>%
 	group_by(Strain,Cu_level,Macronutrient)%>%
-	summarise(mean_q=mean(Quota_num),sderr=se(Quota_num))%>%
-	ggplot(aes(x=Cu_level,y=mean_q,group=1))+
-	stat_summary(fun.y=mean, geom="point",size=4, pch=21,stroke=1.2)+
-	geom_errorbar(aes(ymin=mean_q-sderr, ymax=mean_q+sderr),width=.2,size=0.7)+
-	geom_point(data=nitrogen,aes(x=Cu_level,y=Quota_num),alpha=1/3,size=3,color="#666666")+
+	summarise(mean_q=mean(Quota_num))%>%
+	ggplot(aes(x=Cu_level,y=mean_q, color = Strain, group=1))+
+	stat_summary(fun.y=mean, geom="point",size=4)+
+  scale_color_manual(values=c("#009E73", "#999999", "#E69F00","#0072B2"))+
+	geom_point(data=nitrogen,aes(x = Cu_level,y = Quota_num, color = Strain),alpha=1/6,size=3)+
 	facet_wrap(~Strain, scales = "free_y", nrow=1)+
 	ylab(expression(atop("N quota", 
 											 paste(~(fmol~N~cell^{-1})))))+
-	annotate("text", x = 2.5, y = 12.5, 
-					 label= c("Dokd-P16","R. pomeroyi",
-					 				 "PAlt-P2","PAlt-P26"),size=3.5) +
 	ylim(0,12.5)+
-	xlab(expression("Cu"~(nmol~L^{-1})))+
-	theme(legend.position = "none",
-				strip.text= element_blank(),
-				panel.grid.minor.x = element_blank(),
-				panel.grid.major.x = element_blank(),
-				axis.title.x = element_blank(),
-				axis.text = element_text(size=14),
-				axis.title = element_text(size=11),
-				legend.text = element_text(size=14))
+  theme_bw()+
+  theme(legend.position = "none",
+        strip.text= element_blank(),
+        axis.title.x = element_blank(),
+        axis.text = element_text(size=14),
+        axis.title.y = element_text(size=11),
+        legend.text = element_text(size=14))
+
+#--------------------
+# Phosphorous quotas
+#--------------------
+
+phosph <- data%>%
+  filter(Macronutrient=="Phosphorous")
 
 p3 <- phosph%>%
 	group_by(Strain,Cu_level,Macronutrient)%>%
-	summarise(mean_q=mean(Quota_num),sderr=se(Quota_num))%>%
-	ggplot(aes(x=Cu_level,y=mean_q,group=1))+
-	stat_summary(fun.y=mean, geom="point",size=4, pch=21,stroke=1.2)+
-	geom_errorbar(aes(ymin=mean_q-sderr, ymax=mean_q+sderr),width=.2,size=0.7)+
-	geom_point(data=phosph,aes(x=Cu_level,y=Quota_num),alpha=1/3,size=3,color="#666666")+
+	summarise(mean_q=mean(Quota_num))%>%
+  ggplot(aes(x=Cu_level,y=mean_q, color = Strain, group=1))+
+  stat_summary(fun.y=mean, geom="point",size=4)+
+  scale_color_manual(values=c("#009E73", "#999999", "#E69F00","#0072B2"))+
+  geom_point(data = phosph,aes(x = Cu_level,y = Quota_num, color = Strain),alpha=1/6,size=3)+
 	facet_wrap(~Strain, scales = "free_y", nrow=1)+
 	ylab(expression(atop("P quota", 
 											 paste(~(fmol~P~cell^{-1})))))+
-	annotate("text", x = 2.5, y = 0.8, 
-					 label= c("Dokd-P16","R. pomeroyi",
-					 				 "PAlt-P2","PAlt-P26"),size=3.5) +
 	ylim(0,0.8)+
-	theme(legend.position = "none",
-				strip.text= element_blank(),
-				panel.grid.minor.x = element_blank(),
-				panel.grid.major.x = element_blank(),
-				axis.title.x = element_blank(),
-				axis.text = element_text(size=14),
-				axis.title = element_text(size=11),
-				legend.text = element_text(size=14))
+  theme_bw()+
+  theme(legend.position = "none",
+        strip.text= element_blank(),
+        axis.title.x = element_blank(),
+        axis.text = element_text(size=14),
+        axis.title.y = element_text(size=11),
+        legend.text = element_text(size=14))
+
+#----------------
+# Sulfur
+#----------------
+
+sulf <- data%>%
+  filter(Macronutrient=="Sulfur")
 
 p4 <- sulf%>%
 	group_by(Strain,Cu_level,Macronutrient)%>%
-	summarise(mean_q=mean(Quota_num),sderr=se(Quota_num))%>%
-	ggplot(aes(x=Cu_level,y=mean_q,group=1))+
-	stat_summary(fun.y=mean, geom="point",size=4, pch=21,stroke=1.2)+
-	geom_errorbar(aes(ymin=mean_q-sderr, ymax=mean_q+sderr),width=.2,size=0.7)+
-	geom_point(data=sulf,aes(x=Cu_level,y=Quota_num),alpha=1/3,size=3,color="#666666")+
+  summarise(mean_q=mean(Quota_num))%>%
+  ggplot(aes(x=Cu_level,y=mean_q, color = Strain, group=1))+
+  stat_summary(fun.y=mean, geom="point",size=4)+
+  scale_color_manual(values=c("#009E73", "#999999", "#E69F00","#0072B2"))+
+  geom_point(data = sulf,aes(x = Cu_level,y = Quota_num, color = Strain),alpha=1/6,size=3)+
 	facet_wrap(~Strain, scales = "free_y", nrow=1)+
 	ylab(expression(atop("S quota", 
 											 paste(~(fmol~S~cell^{-1})))))+
-	annotate("text", x = 2.5, y = 0.6, 
-					 label= c("Dokd-P16","R. pomeroyi",
-					 				 "PAlt-P2","PAlt-P26"),size=3.5) +
 	ylim(0,0.6)+
-	theme(legend.position = "none",
-				strip.text= element_blank(),
-				panel.grid.minor.x = element_blank(),
-				panel.grid.major.x = element_blank(),
-				axis.title.x = element_blank(),
-				axis.text = element_text(size=14),
-				axis.title = element_text(size=11),
-				legend.text = element_text(size=14))
+  theme_bw()+
+  theme(legend.position = "none",
+        strip.text= element_blank(),
+        axis.title.x = element_blank(),
+        axis.text = element_text(size=14),
+        axis.title.y = element_text(size=11),
+        legend.text = element_text(size=14))
+
+#-------------------
+# Ratios
+#------------------
+
 
 p5 <-CN%>%
 	group_by(Strain,Cu_level,Macronutrient)%>%
@@ -149,7 +157,7 @@ p5 <-CN%>%
 	annotate("text", x = 2.5, y = 8, 
 					 label= c("Dokd-P16","R. pomeroyi",
 					 				 "PAlt-P2","PAlt-P26"),size=3.5) +
-	geom_hline(yintercept=4.4,linetype = "3313",size=1)+
+	geom_hline(yintercept= 5.1,linetype = "3313",size=1)+
 	ylim(2,8)+
 	theme(legend.position = "none",
 				strip.text= element_blank(),
@@ -173,7 +181,7 @@ p6 <-SP%>%
 	annotate("text", x = 2.5, y = 2.2, 
 					 label= c("Dokd-P16","R. pomeroyi",
 					 				 "PAlt-P2","PAlt-P26"),size=3.5) +
-	geom_hline(yintercept=0.86,linetype = "3313",size=1)+
+	geom_hline(yintercept= 0.63,linetype = "3313",size=1)+
 #	xlab(expression("Cu"~(nmol~L^{-1})))+
 	ylim(0.2,2.2)+
 	theme(legend.position = "none",
