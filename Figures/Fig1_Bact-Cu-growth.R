@@ -7,8 +7,8 @@ library(tidyverse)
 library(cowplot)
 
 # loading data
-metal_data <-read_csv("Datasets/Bact_phosph_metals.csv") 
-growth <-read_csv("Datasets/Bact_growth-rates.csv")
+metals <-read_csv("Data/01_Bact-metals-P-norm-tidydata.csv") 
+growth <-read_csv("Data/01_Bact-growth-rates-tidydata.csv")
 
 
 #metal_data$Strain <- as.factor(metal_data$Strain)
@@ -17,9 +17,9 @@ growth <-read_csv("Datasets/Bact_growth-rates.csv")
 
 
 # changing the order of factors and converting them to factors
-metal_data$Strain<-factor(metal_data$Strain, levels = c("Dokd_P16","R.pomeroyi", "PAlt_P2","PAlt_P26"))
-metal_data$Cu_level <- factor(metal_data$Cu_level, levels = c("0.6","2","10","25","50"))
-metal_data$Me_P <- factor(metal_data$Me_P,levels = c("Fe_P","Zn_P","Cu_P","Mn_P", "Co_P"))
+metals$Strain<-factor(metals$Strain, levels = c("Dokd_P16","R.pomeroyi", "PAlt_P2","PAlt_P26"))
+metals$Cu_level <- factor(metals$Cu_level, levels = c("0.6","2","10","25","50"))
+metals$Me_P <- factor(metals$Me_P,levels = c("Fe_P","Zn_P","Cu_P","Mn_P", "Co_P"))
 
 # checking the orders were correctly converted
 #levels(metal_data$Strain)
@@ -29,6 +29,7 @@ metal_data$Me_P <- factor(metal_data$Me_P,levels = c("Fe_P","Zn_P","Cu_P","Mn_P"
 # converting char variables to factors in the growth dataset
 growth$Strain<- as.factor(growth$Strain)
 growth$Cu_total <- as.factor(growth$Cu_total)
+#growth$Cu_level <- factor(growth$Cu_level, levels = c("0.6","2","10","25","50"))
 
 
 # extracting only 4 strains (not plotting other Pseudoalteromonas)
@@ -44,21 +45,16 @@ subset$Strain<-factor(subset$Strain, levels = c("Dokdonia sp","R.pomeroyi",
 # ----------------------------------------------------------------------------
 # Cu quota plot [bottom]
 
-# need to create an excerpt so that I can overlay individual data points
-# over the means
-copper<-metal_data%>%
-  filter(Me_P=="Cu_P")
-
 # renaming the factors to what I want them to appear like in the strip
-levels(copper$Strain) <- c("Dokd-P16", "R.pomeroyi", "PAlt-P2", "PAlt-P26")
+#levels(metals$Strain) <- c("Dokd-P16", "R.pomeroyi", "PAlt-P2", "PAlt-P26")
 
-p1 <-copper%>%
-	group_by(Strain,Cu_level,Me_P)%>%
-	summarise(mean_q=mean(Quota))%>%
-	ggplot(aes(x = Cu_level,y = mean_q,color = Strain, group = 1))+
-	geom_jitter(data=copper,aes(x = Cu_level,y = Quota, color= Strain), width = 0.1,size = 1.5, alpha = 1/3)+
-  scale_color_manual(values=c("#009E73", "#666666", "#E69F00","#0072B2"))+
+p1 <-metals%>%
+  filter(Me_P == "Cu_P")%>%
+	group_by(Strain,Cu_level)%>%
+	ggplot(aes(x = Cu_level,y = Quota,color = Strain))+
+	geom_jitter(width = 0.1,size = 1.5, alpha = 1/3)+
 	stat_summary(fun.y=mean, geom="point", pch = "_", size = 6)+
+  scale_color_manual(values=c("#009E73", "#666666", "#E69F00","#0072B2"))+
   annotate("rect", xmin=1.8, xmax=3.3, ymin=0.0, ymax=0.25, alpha=.3, fill="gray")+
   scale_y_continuous(limits=c(0,0.25),expand=c(0,0))+
 	facet_wrap(~Strain, scales = "free_y",nrow = 1)+
@@ -78,19 +74,18 @@ p1 <-copper%>%
 #------------------------------------------------------------------------
 # growth rates [top]
 
-levels(subset$Strain) <- c("Dokd-P16", "R.pomeroyi", "PAlt-P2", "PAlt-P26")
+#levels(subset$Strain) <- c("Dokd-P16", "R.pomeroyi", "PAlt-P2", "PAlt-P26")
+
 
 p2 <- subset%>%
   group_by(Strain,Cu_total)%>%
-  summarise(mean_q=mean(mu_day))%>%
-  ggplot(aes(x = Cu_total,y = mean_q,color = Strain, group = 1))+
-  geom_jitter(data=subset,aes(x = Cu_total,y = mu_day, color=Strain), width = 0.1,size = 1.5, alpha = 1/3)+
-  scale_color_manual(values=c("#009E73", "#666666", "#E69F00","#0072B2"))+
+  ggplot(aes(x = Cu_total,y = mu_day,color = Strain))+
+  geom_jitter( width = 0.1, size = 1.5, alpha = 1/3)+
   stat_summary(fun.y=mean, geom="point", pch = "_", size = 6)+
+  scale_color_manual(values=c("#009E73", "#666666", "#E69F00","#0072B2"))+
   annotate("rect", xmin=1.8, xmax=3.3, ymin=0.0, ymax=23, alpha=.3, fill="gray")+
   scale_y_continuous(limits=c(0,23),expand=c(0,0))+
   facet_wrap(~Strain, scales = "free_y",nrow = 1)+
- # geom_line(linetype="dashed")+
   ylab ("Growth rate (d-1)")+
   theme_bw()+
   theme(legend.position = "none",
