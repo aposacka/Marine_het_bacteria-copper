@@ -102,6 +102,6 @@ p2 <- subset%>%
 
 plot <-plot_grid(p2,p1,align = "v",nrow=2)
 
-save_plot (filename="Fig_1.tiff", plot= plot, base_height= 2.5, base_width=5)
+save_plot (filename="Fig1_Bact-Cu-growth.tiff", plot= plot, base_height= 2.5, base_width=5)
 
 
