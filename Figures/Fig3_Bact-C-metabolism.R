@@ -8,38 +8,56 @@
  library(cowplot)
 
 # loading data
- data <-read_csv("Bact_Growth-Efficiency/Bact_carb-metab-with-errors-final.csv")
+ data <-read_csv("Data/03_Bact-carb-metab-tidydata.csv")
  
 # convert some variables to factors
- data$Cu_level <- as.factor(data$Cu_level)
- data$Strain<- as.factor(data$Strain)
+data$Cu_level <- as.factor(data$Cu_level)
+data$Strain<- as.factor(data$Strain)
+data$Category <- as.factor(data$Category)
 
-
-# setting the order of factors to plot
- data$Strain<- factor(data$Strain, levels = c("Dokd_P16",
+glimpse(data)
+ 
+# setting the order of factors for plotting
+data$Strain<- factor(data$Strain, levels = c("Dokd_P16",
 																						 "R.pomeroyi",
 																						 "PAlt_P26"))
-
-
-#~~~~~~~PLOTS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# plotting cellular resp. per day for each strain in a facet, this is top panel
  
+data$Strain<- factor(data$Category, levels = c("BR_per_day",
+                                              "BP",
+                                              "BCD",
+                                              "BGE"))
+ 
+levels(data$Category)
+levels(data$Strain)
+
+#-------------------
+# Plot
+
  p1 <-data%>%
-  	group_by(Cu_level, Strain)%>%
-	  summarize(mean_BR=mean(BR_cell_day),std=sd(BR_cell_day),prop_err=std/sqrt(n()))%>%
-	    ggplot(aes(x=Cu_level,y=mean_BR,group=1))+
-	    geom_line(linetype="dashed")+
-	    stat_summary(fun.y=mean, geom="point",size=4, pch=21,stroke=1.5)+
-	    geom_errorbar(aes(ymin=mean_BR-prop_err, ymax=mean_BR+prop_err), width=.3)+
-	    geom_point(data=data,aes(x=Cu_level,y=BR_cell_day),alpha=1/3,size=3,color="#666666")+
-	    facet_wrap(~Strain, scales="free_y")+
-	    ylab(expression("BR"[cell]~(fmol~O[2]~cell^{-1})))+
-	    guides(colour=FALSE)+
-	    theme(strip.text.x = element_blank(),
-		        axis.title.x = element_blank(),
-		        axis.text = element_text(size=15),
-		        axis.title.y= element_text(size=13))
+      filter(Category == "BR_cell_day")%>%
+    	group_by(Cu_level, Strain)%>%
+	    ggplot(aes(x = Cu_level,y = Value, color = Strain))+
+      stat_summary(fun.y = mean, geom = "point", pch = "_", size = 7)+
+	    geom_point(alpha = 1/3,size = 3)+
+	    facet_wrap(~Strain, scales = "free_y")+
+      scale_color_manual(values = c("#009E73","#666666","#0072B2"))+
+     # annotate ("rect", limits = c(min_xy, max_xy), alpha = .3, fill = "gray")+
+    #  annotate("rect", xmin=1.8, xmax=3.3, ymin=0.0, ymax=600, alpha=.3, fill="gray")+
+    #  scale_y_continuous(expand=c(0,0))+
+	   ylab(expression("BR"[cell]~(fmol~O[2]~cell^{-1})))+
+	    guides(colour = FALSE)+
+      theme_bw()+
+      theme(legend.position = "none",
+         strip.text= element_blank(),
+         axis.title.x = element_blank(),
+         panel.grid.major.x = element_blank(), 
+         panel.grid.minor.x = element_blank(),
+         panel.grid.major.y = element_blank(),
+         panel.grid.minor.y = element_blank(),
+         axis.text = element_text(size=11),
+         axis.title.y = element_text(size=11),
+         legend.text = element_text(size=11))
+	   
 
 
 # plotting Bact. productivity for each strain
