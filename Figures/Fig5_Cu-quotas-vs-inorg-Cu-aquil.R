@@ -6,19 +6,19 @@
 library(tidyverse)
 library(cowplot)
 
-data <-read_csv("Datasets/Cu_quotas-synthesis-Aquil.csv") 
+dat <-read_csv("Data/05_Cu-quotas-lit-aquil-tidydata.csv") 
 
-#glimpse(data)
+glimpse(dat)
 
-data$Taxon<- as.factor(data$Taxon)
-data$Species<- as.factor(data$Species)
-data$Domain<- as.factor(data$Domain)
-data$Strategy <- as.factor(data$Strategy)
+dat$Taxon<- as.factor(dat$Taxon)
+dat$Species<- as.factor(dat$Species)
+dat$Domain<- as.factor(dat$Domain)
+dat$Strategy <- as.factor(dat$Strategy)
 
 #---------------Phytoplankton----------------------------
 
-phytos<-data%>%
-	filter(Strategy=="Photosynthetic",Cu_C<13)%>%
+phytos<-dat%>%
+	filter(Strategy == "Photosynthetic",Cu_C<13)%>%
 	ggplot(aes(x = Cu_prime_log,y = Cu_C,fill = Taxon))+
 	geom_jitter(shape=21,size=5,alpha=1/2, width=0.02)+
 	annotate("rect", xmin = 14.5, xmax = 12, ymin = 2.8, ymax = 4.9, alpha =.3, fill ="gray")+
@@ -29,8 +29,8 @@ phytos<-data%>%
 	scale_x_reverse(name ="-log([Cu'])",expand=c(0,0))+
 	scale_y_continuous(breaks = c(0,1.5,3,4.5,6,7.5,9,10.5,12),limits = c(0,12.6))+
 	ylab(expression("Cu:C" ~(mu~mol:mol)))+
-	geom_hline(data = data, aes(yintercept = 2.42),linetype="dashed",size=0.8)+
-	geom_hline(data = data, aes(yintercept = 1.83),linetype="dotted",size=0.8)+
+	geom_hline(data = dat, aes(yintercept = 2.42),linetype="dashed",size=0.8)+
+	geom_hline(data = dat, aes(yintercept = 1.83),linetype="dotted",size=0.8)+
 	theme_bw()+
 	theme(panel.grid.major.x = element_blank(), 
 				panel.grid.minor.x = element_blank(),
@@ -44,8 +44,8 @@ phytos<-data%>%
 
 #-------------Het.bacteria-------------------------------------
 
-bact<-data%>%
-	filter(Strategy=="Heterotrophic")%>%
+bact<-dat%>%
+	filter(Strategy == "Heterotrophic")%>%
 	ggplot(aes(x=Cu_prime_log,y=Cu_C,fill=Taxon))+
 	geom_jitter(shape=23, size=5,alpha=1/2)+
 	annotate("rect", xmin=14.5, xmax=12, ymin=2.8, ymax=4.9, alpha=.3, fill="gray")+
@@ -56,7 +56,7 @@ bact<-data%>%
 	scale_x_reverse(name="-log([Cu'])",expand=c(0,0))+
 	ylab(expression("Cu:C" ~(mu~mol:mol)))+
 	scale_y_continuous(breaks = c(0,1.5,3,4.5,6,7.5,9,10.5,12),limits = c(0,12.6))+
-	geom_hline(data = data, aes(yintercept = 1.24),linetype="dashed",size=0.8)+
+	geom_hline(data = dat, aes(yintercept = 1.24),linetype="dashed",size=0.8)+
 	theme_bw()+
 	guides(color=guide_legend(nrow =2))+
 	theme(panel.grid.major.x = element_blank(), 
@@ -72,6 +72,6 @@ bact<-data%>%
 
 plot <-plot_grid(phytos,bact,
 								 labels = c("A", "B"),label_size = 12, align = "h")
-plot
 
-save_plot (filename="Fig.6.tiff", plot= plot, base_height= 4, base_width =9.5)
+
+save_plot (filename="Fig5_Cu-quotas-vs-inorg-Cu-lit.tiff", plot= plot, base_height= 4, base_width =9.5)
