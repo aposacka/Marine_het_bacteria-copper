@@ -8,8 +8,6 @@ library(cowplot)
 
 dat <-read_csv("Data/05_Cu-quotas-lit-aquil-tidydata.csv") 
 
-glimpse(dat)
-
 dat$Taxon<- as.factor(dat$Taxon)
 dat$Species<- as.factor(dat$Species)
 dat$Domain<- as.factor(dat$Domain)
@@ -74,4 +72,4 @@ plot <-plot_grid(phytos,bact,
 								 labels = c("A", "B"),label_size = 12, align = "h")
 
 
-save_plot (filename="Fig5_Cu-quotas-vs-inorg-Cu-lit.tiff", plot= plot, base_height= 4, base_width =9.5)
+save_plot (filename="Fig5_Cu-quotas-vs-inorg-Cu-published.tiff", plot= plot, base_height= 4, base_width =9.5)
