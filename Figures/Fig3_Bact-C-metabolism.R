@@ -27,8 +27,6 @@ data$Strain<- factor(data$Category, levels = c("BR_per_day",
                                               "BCD",
                                               "BGE"))
  
-levels(data$Category)
-levels(data$Strain)
 
 #-------------------
 # Plot

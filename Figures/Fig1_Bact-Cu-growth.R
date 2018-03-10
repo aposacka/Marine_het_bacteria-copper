@@ -10,7 +10,7 @@ library(cowplot)
 metals <-read_csv("Data/01_Bact-metals-P-norm-tidydata.csv") 
 growth <-read_csv("Data/01_Bact-growth-rates-tidydata.csv")
 
-
+metals
 #metal_data$Strain <- as.factor(metal_data$Strain)
 #metal_data$Cu_level <- as.factor(metal_data$Cu_level)
 #metal_data$Me_P <- as.factor(metal_data$Me_P)
