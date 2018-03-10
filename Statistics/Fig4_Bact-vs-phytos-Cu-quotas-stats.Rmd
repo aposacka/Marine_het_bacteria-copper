@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Question: "Are metal quotas (Me:C) of bacteria and phytoplankton different?"
 
-Null hypothesis : "Metal quotas (Me:C medians) of bacteria and phytoplankton are equal"
+Null hypothesis : "Metal quotas (Me:C medians) of bacteria and phytoplankton do not differ"
 
 Considerations:
 
@@ -46,6 +46,7 @@ Testing differences between two samples:
 # load the data from csv
 library(tidyverse)
 data <-read_csv("Data/05_Cu-quotas-lit-aquil-tidydata.csv") 
+
 glimpse(data)
 
 # sort out the variable formats
@@ -57,15 +58,16 @@ data$Domain<- as.factor(data$Domain)
 
 
 ## 2 Subsetting
-Note, there is an crazy outlier in the phytoplakton data @ Cu:C of 30, this is not included in the test
+Note, there is a single, abnormal observation in the phytoplakton data @ Cu:C of 30, this is not included in the test
 
 ```{r message=FALSE}
-data_no_cyano <- data%>% filter(Cu_C<20, Domain %in% c("Euk_algae","Het_bacteria"))
+data_no_cyano <- data%>% filter(Domain %in% c("Euk_algae","Het_bacteria"), Cu_C < 20)
 
 ```
 
 
 ## 3. Assessing normalitey. 
+
 Note, data points fall outside the 95% confidence intervals suggesting non-normal distribution of data
 
 ```{r message=FALSE}
@@ -77,23 +79,23 @@ qqPlot(data_no_cyano$Cu_C)
 
 ## 4. Testing for equality of variances
 
-Variances are NOT equal as p= 0.027
+Variances are NOT equal as p = 0.019 for Levene Test, similarily with F test we get significant p>0.001
 
 ```{r message=FALSE}
 
-leveneTest (Cu_C~Domain, data=data_no_cyano)
+leveneTest (Cu_C ~ Domain, data = data_no_cyano)
 
 # or F-test if data were to be normally distributed
-# var.test(Cu_C~Domain, data=data_no_cyano) - this is F-test
+var.test(Cu_C~Domain, data=data_no_cyano)# - this is F-test
 ```
 
 ### 5. Non parametric tests
 
-#####Wilcox Rank sum test (Mann-Whitney U test) and Moods median test (for further exploration). Result: since p-value for both Wilcox and Moods median is >0.05, we reject accept the null hypothesis that Cu quotas of bacteria and phytoplankton on this dataset are the same (significantly not different)
+#####Wilcox Rank sum test (Mann-Whitney U test) and Moods median test (for further exploration). Result: since p-value for both Wilcox and Moods median is >0.05, we accept the null hypothesis that Cu quotas of bacteria and phytoplankton on this dataset are the same. Note this Wilcox test function in R is by default two.sided.
 
 ```{r message=FALSE}
 
-wilcox.test(Cu_C~Domain, data=data_no_cyano)
+wilcox.test(Cu_C~Domain, data = data_no_cyano)
 
 library(RVAideMemoire)
 mood.medtest(Cu_C ~ Domain,
