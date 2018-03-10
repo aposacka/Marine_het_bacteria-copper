@@ -45,7 +45,7 @@ Testing differences between two samples:
 
 # load the data from csv
 library(tidyverse)
-data <-read_csv("C:/Users/Ania/Bact_Stoichiometry/Frontiers/Copper_to-carbon-ratios-compilation/Cu_quotas-synthesis-Aquil.csv") 
+data <-read_csv("Data/05_Cu-quotas-lit-aquil-tidydata.csv") 
 glimpse(data)
 
 # sort out the variable formats
