@@ -97,9 +97,8 @@ var.test(Cu_C~Domain, data=data_no_cyano)# - this is F-test
 
 wilcox.test(Cu_C~Domain, data = data_no_cyano)
 
-library(RVAideMemoire)
-mood.medtest(Cu_C ~ Domain,
-						 data = data_no_cyano)
+library(RVAideMemoire) # contains function for the moods median test
+mood.medtest(Cu_C ~ Domain,data = data_no_cyano)
 
 ```
 
