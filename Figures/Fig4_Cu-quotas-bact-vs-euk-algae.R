@@ -1,45 +1,70 @@
-# script to produce Fig. 4 of the Frontiers manuscript with statistical tests
+#----------------------------------------------------
+# Script to produce Fig. 4 of the Frontiers manuscript
+# comaring Cu:C ratios of eukaryotic algae (published)
+# and heterotrophic bacteria
+#-----------------------------------------------------
 
 
 # load the data from csv
 library(tidyverse)
-data <-read_csv("C:/Users/Ania/Bact_Stoichiometry/Frontiers/Copper_to-carbon-ratios-compilation/Cu_quotas-synthesis-Aquil.csv") 
-glimpse(data)
+data <-read_csv("Data/05_Cu-quotas-lit-aquil-tidydata.csv") 
 
-# sort out the variable formats
+# convert some variables to factors, for some
+# reason they don't get converted from char to 
+# factor with read_csv
+
 data$Strategy <- as.factor(data$Strategy)
 data$Taxon<- as.factor(data$Taxon)
 data$Species<- as.factor(data$Species)
 data$Domain<- as.factor(data$Domain)
 
-# check names for Domains
-#levels(data$Domain)
-# are there duplicated values at Cu_C>5?
-#ata%>%select(Ref,Domain,Species,Cu_C)%>%filter(Cu_C>5)
+#--------------------------------------
+# find the median for bacteria and phytos
+# these values will be plotted. P values 
+# can be found in the Rmd file
+# Fig4_Bact-vs-phytos-Cu-quotas-stats.Rmd
+#---------------------------------------
+
+data%>%
+  group_by(Domain)%>%
+  summarise(medianz = median(Cu_C))
+
+#----------------------------------------
+# Manufacture the plot 
+#----------------------------------------
 
 p1 <- data%>%
 	filter(Cu_C<15, Domain %in% c("Euk_algae","Het_bacteria"))%>%
-	ggplot(aes(x = Domain, y = Cu_C,fill=Domain))+
-	geom_boxplot()+
-#	geom_jitter(width=0.05)+
-	scale_fill_manual(values=c("#00AFBB", "#E7B800"))+
+	ggplot(aes(x = Domain, y = Cu_C,color = Domain))+
+	geom_boxplot(outlier.shape = NA)+
+	geom_jitter(width = 0.05, size = 3, alpha = 1/2)+
+	scale_color_manual(values = c("#00AFBB", "#E69F00"))+
+  scale_x_discrete(labels = c("Eukaryotic \n algae", "Heterotrophic \n bacteria"))+
 	ylab(expression("Cu:C" ~(mu~mol:mol)))+
-	ylim(0,12.5)+
+  annotate("text", x = 2.12, y = 12.5, label = "Levene, p = 0.02", fontface = 1,size = 4) +
+  annotate("text", x = 1.8, y = 11.5, label = "Wilcoxon (two-sided), p = 0.06", fontface = 1,size = 4) +
+  annotate("text", x = 1, y = 6, label = "Median = 1.83", fontface = 1,size = 4.5, color = "#00AFBB")+ 
+  annotate("text", x = 2, y = 6, label = "Median = 1.11", fontface = 1,size = 4.5, color = "#E69F00") +
+  ylim(0,12.5)+
 	theme_bw()+
 	theme(panel.grid.major.x = element_blank(), 
 				panel.grid.minor.x = element_blank(),
 				panel.grid.major.y = element_blank(),
 				panel.grid.minor.y = element_blank(),
-				axis.title.y= element_text(size=12),
+				axis.title.y= element_text(size = 12),
 				axis.title.x= element_blank(),
-				axis.text.x = element_text(angle = 25, hjust = 0.9),
-				axis.text = element_text(size=12),
-				legend.text = element_text(size=10),
+				axis.text.x = element_text(colour = c("#00AFBB", "#E69F00")),
+				axis.text = element_text(size = 12),
+				legend.text = element_text(size = 10),
 				legend.position = "none")
 
-save_plot (filename="Fig4_Bact_vs_Phytos.tiff", plot= p1, base_height= 4, base_width =9.5)
+#------------------
+# Save plot at tiff
+#-----------------
 
-#-----------------------------STATISTICAL ANALYSIS---------------------------------------------
+library(cowplot)
 
-p1
+save_plot (filename ="Fig4_Cu-quotas-bact_vs_euk-algae.tiff", plot = p1, base_height = 4, base_width = 4)
+
+
 
