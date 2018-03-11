@@ -1,93 +1,90 @@
-Ref,Strategy,Domain,Taxon,Species,Cu_prime,Cu_prime_log,Cu_C,Cu_P,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Chlorarachniophyceae,Chlorarachnion globosum,2.00E-13,12.7,7.48,0.83,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Chlorarachniophyceae,Chlorarachnion reptans,2.00E-13,12.7,4.29,0.3,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Euglenophyceae,Eutrepitella sp,2.00E-13,12.7,2.5,0.36,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Glaucocytophyceae,Cyanophora paradoxa,2.00E-13,12.7,27.91,1.2,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Rhodophyceae,Rhodella maculata,2.00E-13,12.7,2.27,0.4,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Rhodophyceae,Rhodosorus marinus,2.00E-13,12.7,1.43,0.11,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Rhodophyceae,Porphyridium aerugineum,2.00E-13,12.7,1.17,0.13,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Rhodophyceae,Porphyridium purpureum,2.00E-13,12.7,0.71,0.08,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Chrysophyceae,Ochromonas sp.,2.00E-13,12.7,4.17,0.5,,,
-Quigg_et_al_2010,Photosynthetic,Euk_algae,Cryptophyceae,Rhodomonas salina,2.00E-13,12.7,4.42,1.3,,,
-Quigg_et_al_2010,Photosynthetic,Cyanobacteria,Cyanophyceae,Synechococcus sp.,2.00E-13,12.7,12.5,0.65,,,
-Quigg_et_al_2010,Photosynthetic,Cyanobacteria,Cyanophyceae,Cyanothece sp,2.00E-13,12.7,7.87,0.48,,,
-Quigg_et_al_2010,Photosynthetic,Cyanobacteria,Cyanophyceae,Trichodesmium sp.,2.00E-13,12.7,4.97,0.8,,,
-Quigg_et_al_2010,Photosynthetic,Cyanobacteria,Cyanophyceae,Anabaena flosaquae,2.00E-13,12.7,2.24,0.35,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Chlorophyceae,D.tertiolecta,2.00E-13,12.7,3.02,0.67,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Prasinophyceae,P.parkae,2.00E-13,12.7,2.97,0.62,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Chlorophyceae,N.atomus,2.00E-13,12.7,1.33,0.23,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Prasinophyceae,P.provasoli,2.00E-13,12.7,2.77,0.53,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Prasinophyceae,Tetraselmis sp,2.00E-13,12.7,2.56,0.51,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Dinophyceae,G.chlorophorum,2.00E-13,12.7,9.93,1.36,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Dinophyceae,P.minimum,2.00E-13,12.7,2.07,0.28,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Dinophyceae,A.carterae,2.00E-13,12.7,4.29,0.54,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Dinophyceae,T.hemii,2.00E-13,12.7,0.74,0.06,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Prymesiophyceae,E.huxleyi,2.00E-13,12.7,0.92,0.07,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Prymesiophyceae,G.oceanica,2.00E-13,12.7,1.72,0.11,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Bacillariophyceae,D.brightwelli,2.00E-13,12.7,1.33,0.06,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Bacillariophyceae,T.weissflogii,2.00E-13,12.7,1.98,0.17,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Bacillariophyceae,N.brevirotris,2.00E-13,12.7,4.29,0.18,,,
-Ho_et_al_2003,Photosynthetic,Euk_algae,Bacillariophyceae,T.eccentrica,2.00E-13,12.7,3.73,0.28,,,
-Guo et al_ 2012,Photosynthetic,Cyanobacteria,Cyanophyceae,Synechococcus _WH7803,1.24E-13,12.91,3.8,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,P.pouchetti,1.24E-13,12.91,1.38,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei_oceanic,1.24E-13,12.91,1,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,C.polylepis,1.24E-13,12.91,1.15,na,,,
-Guo et al_ 2012,Photosynthetic,Cyanobacteria,Cyanophyceae,S.lividus,1.24E-13,12.91,0.45,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,P.cordata,1.24E-13,12.91,2.94,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei_coastal,1.24E-13,12.91,1.4,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,C.kappa,1.24E-13,12.91,2.8,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Dinophyceae,P.dentatum,1.24E-13,12.91,0.36,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Dinophyceae,P. minimum,1.24E-13,12.91,0.67,na,,,
-Guo et al_ 2012,Photosynthetic,Cyanobacteria,Cyanophyceae,Synechococcus _WH7803,2.38E-14,13.62,0.79,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,P.pouchetti,2.38E-14,13.62,0.92,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei_oceanic,2.38E-14,13.62,0.04,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,C.polylepis,2.38E-14,13.62,0.7,na,,,
-Guo et al_ 2012,Photosynthetic,Cyanobacteria,Cyanophyceae,S. lividus,2.38E-14,13.62,0.11,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,P.cordata,2.38E-14,13.62,0.71,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei_coastal,2.38E-14,13.62,0.29,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,C.kappa,2.38E-14,13.62,1.1,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Dinophyceae,P.dentatum,2.38E-14,13.62,0.11,na,,,
-Guo et al_ 2012,Photosynthetic,Euk_algae,Dinophyceae,P.minimum,2.38E-14,13.62,0.2,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,C.deciphens,1.24E-13,12.91,0.58,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.weissflogii,1.24E-13,12.91,1.28,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.pseudonana_3H,1.24E-13,12.91,1.88,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,S. costatum,1.24E-13,12.91,2.46,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.pseudonana_1014,1.24E-13,12.91,4.32,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica_610,1.24E-13,12.91,3.18,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica_1003,1.24E-13,12.91,2.93,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,S.menzellii,1.24E-13,12.91,3.2,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,C.deciphens,2.38E-14,13.62,0.85,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.weissflogii,2.38E-14,13.62,0.33,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.pseudonana_3H,2.38E-14,13.62,1.96,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,S. costatum,2.38E-14,13.62,0.97,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.pseudonana_1014,2.38E-14,13.62,2.58,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica_610,2.38E-14,13.62,1.83,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica_1003,2.38E-14,13.62,0.94,na,,,
-Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,S.menzellii,2.38E-14,13.62,0.82,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,1.82E-14,13.74,0.22,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,3.89E-14,13.41,0.93,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,8.71E-14,13.06,1.82,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,2.29E-13,12.64,2.02,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,7.08E-13,12.15,3.59,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,7.08E-13,12.15,2.81,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica,9.12E-14,13.04,1.35,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica,2.45E-13,12.61,1.67,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica,7.59E-13,12.12,3.06,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica,7.41E-13,12.13,3.29,na,,,
-Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica,7.58578E-13,12.12,3.83,na,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,4.60E-15,14.34,1.3,0.063,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,1.98E-14,13.7,1.44,0.076,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,8.14E-14,13.09,1.22,0.079,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,2.04E-13,12.69,2.73,0.141,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,3.89E-13,12.41,1.64,0.118,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Roseobacter,R.pomeroyi,4.60E-15,14.34,0.6,0.054,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Roseobacter,R.pomeroyi,1.98E-14,13.7,1,0.116,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Roseobacter,R.pomeroyi,8.14E-14,13.09,1.9,0.146,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Roseobacter,R.pomeroyi,3.89E-13,12.41,2.5,0.154,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P26,4.60E-15,14.34,1.4,0.06,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P26,1.98E-14,13.7,1,0.05,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P26,8.14E-14,13.09,0.5,0.06,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P26,3.89E-13,12.41,0.7,0.04,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P2,4.60E-15,14.34,0.83,0.031,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P2,8.14E-14,13.09,0.85,0.039,,,
-Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P2,2.04E-13,12.69,0.87,0.277,,,
+Ref,Strategy,Domain,Taxon,Species,Cu_prime,Cu_prime_log,Cu_C,Cu_P
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Chlorarachniophyceae,Chlorarachnion globosum,2.00E-13,12.7,7.48,0.83
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Chlorarachniophyceae,Chlorarachnion reptans,2.00E-13,12.7,4.29,0.3
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Euglenophyceae,Eutrepitella sp,2.00E-13,12.7,2.5,0.36
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Glaucocytophyceae,Cyanophora paradoxa,2.00E-13,12.7,27.91,1.2
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Rhodophyceae,Rhodella maculata,2.00E-13,12.7,2.27,0.4
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Rhodophyceae,Rhodosorus marinus,2.00E-13,12.7,1.43,0.11
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Rhodophyceae,Porphyridium aerugineum,2.00E-13,12.7,1.17,0.13
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Rhodophyceae,Porphyridium purpureum,2.00E-13,12.7,0.71,0.08
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Chrysophyceae,Ochromonas sp.,2.00E-13,12.7,4.17,0.5
+Quigg_et_al_2010,Photosynthetic,Euk_algae,Cryptophyceae,Rhodomonas salina,2.00E-13,12.7,4.42,1.3
+Quigg_et_al_2010,Photosynthetic,Cyanobacteria,Cyanophyceae,Synechococcus sp.,2.00E-13,12.7,12.5,0.65
+Quigg_et_al_2010,Photosynthetic,Cyanobacteria,Cyanophyceae,Cyanothece sp,2.00E-13,12.7,7.87,0.48
+Quigg_et_al_2010,Photosynthetic,Cyanobacteria,Cyanophyceae,Trichodesmium sp.,2.00E-13,12.7,4.97,0.8
+Quigg_et_al_2010,Photosynthetic,Cyanobacteria,Cyanophyceae,Anabaena flosaquae,2.00E-13,12.7,2.24,0.35
+Ho_et_al_2003,Photosynthetic,Euk_algae,Chlorophyceae,D.tertiolecta,2.00E-13,12.7,3.02,0.67
+Ho_et_al_2003,Photosynthetic,Euk_algae,Prasinophyceae,P.parkae,2.00E-13,12.7,2.97,0.62
+Ho_et_al_2003,Photosynthetic,Euk_algae,Chlorophyceae,N.atomus,2.00E-13,12.7,1.33,0.23
+Ho_et_al_2003,Photosynthetic,Euk_algae,Prasinophyceae,P.provasoli,2.00E-13,12.7,2.77,0.53
+Ho_et_al_2003,Photosynthetic,Euk_algae,Prasinophyceae,Tetraselmis sp,2.00E-13,12.7,2.56,0.51
+Ho_et_al_2003,Photosynthetic,Euk_algae,Dinophyceae,G.chlorophorum,2.00E-13,12.7,9.93,1.36
+Ho_et_al_2003,Photosynthetic,Euk_algae,Dinophyceae,P.minimum,2.00E-13,12.7,2.07,0.28
+Ho_et_al_2003,Photosynthetic,Euk_algae,Dinophyceae,A.carterae,2.00E-13,12.7,4.29,0.54
+Ho_et_al_2003,Photosynthetic,Euk_algae,Dinophyceae,T.hemii,2.00E-13,12.7,0.74,0.06
+Ho_et_al_2003,Photosynthetic,Euk_algae,Prymesiophyceae,E.huxleyi,2.00E-13,12.7,0.92,0.07
+Ho_et_al_2003,Photosynthetic,Euk_algae,Prymesiophyceae,G.oceanica,2.00E-13,12.7,1.72,0.11
+Ho_et_al_2003,Photosynthetic,Euk_algae,Bacillariophyceae,D.brightwelli,2.00E-13,12.7,1.33,0.06
+Ho_et_al_2003,Photosynthetic,Euk_algae,Bacillariophyceae,T.weissflogii,2.00E-13,12.7,1.98,0.17
+Ho_et_al_2003,Photosynthetic,Euk_algae,Bacillariophyceae,N.brevirotris,2.00E-13,12.7,4.29,0.18
+Ho_et_al_2003,Photosynthetic,Euk_algae,Bacillariophyceae,T.eccentrica,2.00E-13,12.7,3.73,0.28
+Guo et al_ 2012,Photosynthetic,Cyanobacteria,Cyanophyceae,Synechococcus _WH7803,1.24E-13,12.91,3.8,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,P.pouchetti,1.24E-13,12.91,1.38,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei_oceanic,1.24E-13,12.91,1,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,C.polylepis,1.24E-13,12.91,1.15,na
+Guo et al_ 2012,Photosynthetic,Cyanobacteria,Cyanophyceae,S.lividus,1.24E-13,12.91,0.45,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,P.cordata,1.24E-13,12.91,2.94,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei_coastal,1.24E-13,12.91,1.4,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,C.kappa,1.24E-13,12.91,2.8,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Dinophyceae,P.dentatum,1.24E-13,12.91,0.36,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Dinophyceae,P. minimum,1.24E-13,12.91,0.67,na
+Guo et al_ 2012,Photosynthetic,Cyanobacteria,Cyanophyceae,Synechococcus _WH7803,2.38E-14,13.62,0.79,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,P.pouchetti,2.38E-14,13.62,0.92,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei_oceanic,2.38E-14,13.62,0.04,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,C.polylepis,2.38E-14,13.62,0.7,na
+Guo et al_ 2012,Photosynthetic,Cyanobacteria,Cyanophyceae,S. lividus,2.38E-14,13.62,0.11,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,P.cordata,2.38E-14,13.62,0.71,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei_coastal,2.38E-14,13.62,0.29,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Prymnesiophyceae ,C.kappa,2.38E-14,13.62,1.1,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Dinophyceae,P.dentatum,2.38E-14,13.62,0.11,na
+Guo et al_ 2012,Photosynthetic,Euk_algae,Dinophyceae,P.minimum,2.38E-14,13.62,0.2,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,C.deciphens,1.24E-13,12.91,0.58,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.weissflogii,1.24E-13,12.91,1.28,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.pseudonana_3H,1.24E-13,12.91,1.88,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,S. costatum,1.24E-13,12.91,2.46,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.pseudonana_1014,1.24E-13,12.91,4.32,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica_610,1.24E-13,12.91,3.18,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica_1003,1.24E-13,12.91,2.93,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,S.menzellii,1.24E-13,12.91,3.2,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,C.deciphens,2.38E-14,13.62,0.85,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.weissflogii,2.38E-14,13.62,0.33,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.pseudonana_3H,2.38E-14,13.62,1.96,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,S. costatum,2.38E-14,13.62,0.97,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.pseudonana_1014,2.38E-14,13.62,2.58,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica_610,2.38E-14,13.62,1.83,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica_1003,2.38E-14,13.62,0.94,na
+Annett et al_2008,Photosynthetic,Euk_algae,Bacillariophycae,S.menzellii,2.38E-14,13.62,0.82,na
+Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,1.82E-14,13.74,0.22,na
+Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,3.89E-14,13.41,0.93,na
+Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,8.71E-14,13.06,1.82,na
+Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,2.29E-13,12.64,2.02,na
+Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Prymnesiophyceae ,E.huxlei ,7.08E-13,12.15,3.2,na
+Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica,9.12E-14,13.04,1.35,na
+Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica,2.45E-13,12.61,1.67,na
+Sunda_Huntsman_1995,Photosynthetic,Euk_algae,Bacillariophycae,T.oceanica,7.59E-13,12.12,3.39,na
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,4.60E-15,14.34,1.3,0.063
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,1.98E-14,13.7,1.44,0.076
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,8.14E-14,13.09,1.22,0.079
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,2.04E-13,12.69,2.73,0.141
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Flavobacteriia,Dokd_P16,3.89E-13,12.41,1.64,0.118
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Roseobacter,R.pomeroyi,4.60E-15,14.34,0.6,0.054
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Roseobacter,R.pomeroyi,1.98E-14,13.7,1,0.116
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Roseobacter,R.pomeroyi,8.14E-14,13.09,1.9,0.146
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Roseobacter,R.pomeroyi,3.89E-13,12.41,2.5,0.154
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P26,4.60E-15,14.34,1.4,0.06
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P26,1.98E-14,13.7,1,0.05
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P26,8.14E-14,13.09,0.5,0.06
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P26,3.89E-13,12.41,0.7,0.04
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P2,4.60E-15,14.34,0.83,0.031
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P2,8.14E-14,13.09,0.85,0.039
+Posacka_et_al_Frontiers,Heterotrophic,Het_bacteria,Pseudoalteromonas,PAlt_P2,2.04E-13,12.69,0.87,0.277
