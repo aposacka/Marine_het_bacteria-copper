@@ -41,9 +41,9 @@ p1 <- data%>%
 	scale_color_manual(values = c("#00AFBB", "#E69F00"))+
   scale_x_discrete(labels = c("Eukaryotic \n algae", "Heterotrophic \n bacteria"))+
 	ylab(expression("Cu:C" ~(mu~mol:mol)))+
-  annotate("text", x = 2.12, y = 12.5, label = "Levene, p = 0.02", fontface = 1,size = 4) +
-  annotate("text", x = 1.8, y = 11.5, label = "Wilcoxon (two-sided), p = 0.06", fontface = 1,size = 4) +
-  annotate("text", x = 1, y = 6, label = "Median = 1.83", fontface = 1,size = 4.5, color = "#00AFBB")+ 
+  annotate("text", x = 2.12, y = 12.5, label = "Levene, p = 0.029", fontface = 1,size = 4) +
+  annotate("text", x = 1.8, y = 11.5, label = "Wilcoxon (two-sided), p = 0.095", fontface = 1,size = 4) +
+  annotate("text", x = 1, y = 6, label = "Median = 1.72", fontface = 1,size = 4.5, color = "#00AFBB")+ 
   annotate("text", x = 2, y = 6, label = "Median = 1.11", fontface = 1,size = 4.5, color = "#E69F00") +
   ylim(0,12.5)+
 	theme_bw()+

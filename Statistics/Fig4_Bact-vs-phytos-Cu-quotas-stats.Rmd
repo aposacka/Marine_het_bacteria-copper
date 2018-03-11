@@ -45,7 +45,7 @@ Testing differences between two samples:
 
 # load the data from csv
 library(tidyverse)
-data <-read_csv("Data/05_Cu-quotas-lit-aquil-tidydata.csv") 
+data <-read_csv("Data/06_Cu-quotas-lit-aquil-tidydata.csv") 
 
 glimpse(data)
 
@@ -58,7 +58,9 @@ data$Domain<- as.factor(data$Domain)
 
 
 ## 2 Subsetting
-Note, there is a single, abnormal observation in the phytoplakton data @ Cu:C of 30, this is not included in the test
+Note, there is a single, abnormal observation in the phytoplakton data @ Cu:C of 30, this is not included in the test.
+
+Note about data from Sunda & Huntsman 1995: where Cu:C for E. huxleyi and T.oceanica were measured in triplicate, that data was averaged.
 
 ```{r message=FALSE}
 data_no_cyano <- data%>% filter(Domain %in% c("Euk_algae","Het_bacteria"), Cu_C < 20)
