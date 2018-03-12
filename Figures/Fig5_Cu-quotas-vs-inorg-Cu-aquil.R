@@ -13,6 +13,15 @@ dat$Species<- as.factor(dat$Species)
 dat$Domain<- as.factor(dat$Domain)
 dat$Strategy <- as.factor(dat$Strategy)
 
+
+# find out the mean and medians for plotting
+dat%>%
+  group_by(Strategy)%>%
+  filter(Cu_C<20)%>% # exluding the unusual obs at 29 umol:mol
+  summarise(meanz =mean(Cu_C),
+            meadianz =median(Cu_C))
+
+
 #---------------Phytoplankton----------------------------
 
 phytos<-dat%>%
@@ -27,8 +36,8 @@ phytos<-dat%>%
 	scale_x_reverse(name ="-log([Cu'])",expand=c(0,0))+
 	scale_y_continuous(breaks = c(0,1.5,3,4.5,6,7.5,9,10.5,12),limits = c(0,12.6))+
 	ylab(expression("Cu:C" ~(mu~mol:mol)))+
-	geom_hline(data = dat, aes(yintercept = 2.42),linetype="dashed",size=0.8)+
-	geom_hline(data = dat, aes(yintercept = 1.83),linetype="dotted",size=0.8)+
+	geom_hline(data = dat, aes(yintercept = 2.30),linetype="dashed",size=0.8)+
+	geom_hline(data = dat, aes(yintercept = 1.77),linetype="dotted",size=0.8)+
 	theme_bw()+
 	theme(panel.grid.major.x = element_blank(), 
 				panel.grid.minor.x = element_blank(),
@@ -54,7 +63,7 @@ bact<-dat%>%
 	scale_x_reverse(name="-log([Cu'])",expand=c(0,0))+
 	ylab(expression("Cu:C" ~(mu~mol:mol)))+
 	scale_y_continuous(breaks = c(0,1.5,3,4.5,6,7.5,9,10.5,12),limits = c(0,12.6))+
-	geom_hline(data = dat, aes(yintercept = 1.24),linetype="dashed",size=0.8)+
+	geom_hline(data = dat, aes(yintercept = 1.28),linetype="dashed",size=0.8)+
 	theme_bw()+
 	guides(color=guide_legend(nrow =2))+
 	theme(panel.grid.major.x = element_blank(), 
