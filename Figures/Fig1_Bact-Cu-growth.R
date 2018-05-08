@@ -1,6 +1,6 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~README~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Script to produce a figure with metals:p at various Cu levels in 4 strains 
-# of henetrotrophic bacteria Fig.1 in Frontiers in Marine Science
+# Script to produce a figure with metals:phosphorous at various Cu levels in 4 strains 
+# of heterotrophic bacteria shown Fig.1 in Frontiers in Marine Science
 
 # loading packages
 library(tidyverse)

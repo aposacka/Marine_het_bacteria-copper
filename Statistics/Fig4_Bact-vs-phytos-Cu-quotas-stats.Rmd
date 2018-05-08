@@ -81,7 +81,7 @@ qqPlot(data_no_cyano$Cu_C)
 
 ## 4. Testing for equality of variances
 
-Variances are NOT equal as p = 0.019 for Levene Test, similarily with F test we get significant p>0.001
+Variances are NOT equal as p = 0.029 for Levene Test, similarily with F test we get significant p>0.001
 
 ```{r message=FALSE}
 
