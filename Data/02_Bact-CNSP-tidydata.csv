@@ -1,502 +1,520 @@
-Strain,Cu_level,Macronutrient,Quota_num
-Dokdonia sp,0.6,Nitrogen,1.64
-Dokdonia sp,0.6,Nitrogen,2.53
-Dokdonia sp,0.6,Nitrogen,2
-Dokdonia sp,0.6,Nitrogen,1.6
-Dokdonia sp,2,Nitrogen,3.02
-Dokdonia sp,2,Nitrogen,3.38
-Dokdonia sp,2,Nitrogen,3.9
-Dokdonia sp,2,Nitrogen,3.94
-Dokdonia sp,2,Nitrogen,3.45
-Dokdonia sp,2,Nitrogen,3.34
-Dokdonia sp,2,Nitrogen,2.83
-Dokdonia sp,2,Nitrogen,3.46
-Dokdonia sp,2,Nitrogen,2.29
-Dokdonia sp,2,Nitrogen,2.92
-Dokdonia sp,2,Nitrogen,2.76
-Dokdonia sp,2,Nitrogen,2.69
-Dokdonia sp,2,Nitrogen,5.62
-Dokdonia sp,2,Nitrogen,1.72
-Dokdonia sp,2,Nitrogen,1.09
-Dokdonia sp,2,Nitrogen,1.24
-Dokdonia sp,10,Nitrogen,1.3
-Dokdonia sp,10,Nitrogen,1.62
-Dokdonia sp,10,Nitrogen,2.09
-Dokdonia sp,10,Nitrogen,1.63
-Dokdonia sp,10,Nitrogen,2.63
-Dokdonia sp,10,Nitrogen,2.08
-Dokdonia sp,10,Nitrogen,1.48
-Dokdonia sp,10,Nitrogen,1.41
-Dokdonia sp,10,Nitrogen,2
-Dokdonia sp,10,Nitrogen,1.72
-Dokdonia sp,10,Nitrogen,2.11
-Dokdonia sp,10,Nitrogen,1.47
-Dokdonia sp,10,Nitrogen,1.64
-Dokdonia sp,10,Nitrogen,1.5
-Dokdonia sp,10,Nitrogen,1.57
-Dokdonia sp,25,Nitrogen,2.4
-Dokdonia sp,25,Nitrogen,2.05
-Dokdonia sp,25,Nitrogen,1.47
-Dokdonia sp,25,Nitrogen,1.68
-Dokdonia sp,25,Nitrogen,1.25
-Dokdonia sp,25,Nitrogen,1.74
-Dokdonia sp,25,Nitrogen,1.55
-Dokdonia sp,25,Nitrogen,2.01
-Dokdonia sp,25,Nitrogen,2.45
-Dokdonia sp,50,Nitrogen,2.59
-Dokdonia sp,50,Nitrogen,1.87
-Dokdonia sp,50,Nitrogen,1.63
-Dokdonia sp,50,Nitrogen,1.76
-Dokdonia sp,50,Nitrogen,1.75
-Dokdonia sp,50,Nitrogen,1.63
-Dokdonia sp,50,Nitrogen,1.8
-Dokdonia sp,50,Nitrogen,1.53
-Dokdonia sp,50,Nitrogen,1.54
-R.pomeroyi,0.6,Nitrogen,6.42
-R.pomeroyi,0.6,Nitrogen,3.35
-R.pomeroyi,0.6,Nitrogen,5.43
-R.pomeroyi,0.6,Nitrogen,5.13
-R.pomeroyi,0.6,Nitrogen,4.51
-R.pomeroyi,0.6,Nitrogen,3.61
-R.pomeroyi,0.6,Nitrogen,4.28
-R.pomeroyi,2,Nitrogen,4.05
-R.pomeroyi,2,Nitrogen,3.7
-R.pomeroyi,2,Nitrogen,3.49
-R.pomeroyi,2,Nitrogen,3.34
-R.pomeroyi,10,Nitrogen,3.57
-R.pomeroyi,10,Nitrogen,5.74
-R.pomeroyi,10,Nitrogen,3.98
-R.pomeroyi,10,Nitrogen,3.67
-R.pomeroyi,10,Nitrogen,3.52
-R.pomeroyi,10,Nitrogen,4.91
-R.pomeroyi,10,Nitrogen,5.01
-R.pomeroyi,25,Nitrogen,3.38
-R.pomeroyi,25,Nitrogen,3.51
-R.pomeroyi,25,Nitrogen,3.21
-R.pomeroyi,50,Nitrogen,2.87
-R.pomeroyi,50,Nitrogen,4.08
-R.pomeroyi,50,Nitrogen,3.69
-R.pomeroyi,50,Nitrogen,3.55
-R.pomeroyi,50,Nitrogen,3.97
-R.pomeroyi,50,Nitrogen,3.66
-Pseudoalteromonas sp (P26),0.6,Nitrogen,7.03
-Pseudoalteromonas sp (P26),0.6,Nitrogen,7.44
-Pseudoalteromonas sp (P26),0.6,Nitrogen,6.94
-Pseudoalteromonas sp (P26),0.6,Nitrogen,6.53
-Pseudoalteromonas sp (P26),0.6,Nitrogen,6.41
-Pseudoalteromonas sp (P26),0.6,Nitrogen,5.9
-Pseudoalteromonas sp (P26),2,Nitrogen,4.46
-Pseudoalteromonas sp (P26),2,Nitrogen,7.21
-Pseudoalteromonas sp (P26),2,Nitrogen,7.78
-Pseudoalteromonas sp (P26),10,Nitrogen,5.09
-Pseudoalteromonas sp (P26),10,Nitrogen,5.02
-Pseudoalteromonas sp (P26),10,Nitrogen,4.55
-Pseudoalteromonas sp (P26),10,Nitrogen,13.1
-Pseudoalteromonas sp (P26),10,Nitrogen,7.58
-Pseudoalteromonas sp (P26),10,Nitrogen,7.48
-Pseudoalteromonas sp (P26),25,Nitrogen,5.41
-Pseudoalteromonas sp (P26),25,Nitrogen,5.41
-Pseudoalteromonas sp (P26),25,Nitrogen,5.18
-Pseudoalteromonas sp (P26),50,Nitrogen,5.08
-Pseudoalteromonas sp (P26),50,Nitrogen,7.19
-Pseudoalteromonas sp (P26),50,Nitrogen,5.88
-Pseudoalteromonas sp (P26),50,Nitrogen,5.01
-Pseudoalteromonas sp (P26),50,Nitrogen,9.56
-Pseudoalteromonas sp (P2),0.6,Nitrogen,6.25
-Pseudoalteromonas sp (P2),0.6,Nitrogen,3.7
-Pseudoalteromonas sp (P2),0.6,Nitrogen,1.66
-Pseudoalteromonas sp (P2),10,Nitrogen,7.8
-Pseudoalteromonas sp (P2),10,Nitrogen,6
-Pseudoalteromonas sp (P2),10,Nitrogen,6.36
-Pseudoalteromonas sp (P2),25,Nitrogen,6.14
-Pseudoalteromonas sp (P2),25,Nitrogen,7.01
-Pseudoalteromonas sp (P2),25,Nitrogen,5.33
-Dokdonia sp,0.6,Carbon,7.96
-Dokdonia sp,0.6,Carbon,10.8
-Dokdonia sp,0.6,Carbon,9.3
-Dokdonia sp,0.6,Carbon,8.94
-Dokdonia sp,2,Carbon,13.3
-Dokdonia sp,2,Carbon,15
-Dokdonia sp,2,Carbon,17.3
-Dokdonia sp,2,Carbon,18.2
-Dokdonia sp,2,Carbon,15.1
-Dokdonia sp,2,Carbon,13.7
-Dokdonia sp,2,Carbon,12.5
-Dokdonia sp,2,Carbon,16.1
-Dokdonia sp,2,Carbon,10.3
-Dokdonia sp,2,Carbon,12.3
-Dokdonia sp,2,Carbon,12
-Dokdonia sp,2,Carbon,11.4
-Dokdonia sp,2,Carbon,23.6
-Dokdonia sp,2,Carbon,6.36
-Dokdonia sp,2,Carbon,5.97
-Dokdonia sp,2,Carbon,5.76
-Dokdonia sp,10,Carbon,6.04
-Dokdonia sp,10,Carbon,7.73
-Dokdonia sp,10,Carbon,8.91
-Dokdonia sp,10,Carbon,7.14
-Dokdonia sp,10,Carbon,8.2
-Dokdonia sp,10,Carbon,8.56
-Dokdonia sp,10,Carbon,6.82
-Dokdonia sp,10,Carbon,6.61
-Dokdonia sp,10,Carbon,8.23
-Dokdonia sp,10,Carbon,8.21
-Dokdonia sp,10,Carbon,9.35
-Dokdonia sp,10,Carbon,6.28
-Dokdonia sp,10,Carbon,7.04
-Dokdonia sp,10,Carbon,6.48
-Dokdonia sp,10,Carbon,6.87
-Dokdonia sp,25,Carbon,11.2
-Dokdonia sp,25,Carbon,9.32
-Dokdonia sp,25,Carbon,6.86
-Dokdonia sp,25,Carbon,7.17
-Dokdonia sp,25,Carbon,6.69
-Dokdonia sp,25,Carbon,7.45
-Dokdonia sp,25,Carbon,6.3
-Dokdonia sp,25,Carbon,8.59
-Dokdonia sp,25,Carbon,11.1
-Dokdonia sp,50,Carbon,11.8
-Dokdonia sp,50,Carbon,8.68
-Dokdonia sp,50,Carbon,7.36
-Dokdonia sp,50,Carbon,8.19
-Dokdonia sp,50,Carbon,7.6
-Dokdonia sp,50,Carbon,7.21
-Dokdonia sp,50,Carbon,7.69
-Dokdonia sp,50,Carbon,6.53
-Dokdonia sp,50,Carbon,7.22
-R.pomeroyi,0.6,Carbon,26.3
-R.pomeroyi,0.6,Carbon,14.9
-R.pomeroyi,0.6,Carbon,22
-R.pomeroyi,0.6,Carbon,16.8
-R.pomeroyi,0.6,Carbon,18
-R.pomeroyi,0.6,Carbon,14.6
-R.pomeroyi,0.6,Carbon,16.9
-R.pomeroyi,2,Carbon,17.4
-R.pomeroyi,2,Carbon,15
-R.pomeroyi,2,Carbon,14.7
-R.pomeroyi,2,Carbon,14.2
-R.pomeroyi,10,Carbon,14.8
-R.pomeroyi,10,Carbon,23.7
-R.pomeroyi,10,Carbon,16
-R.pomeroyi,10,Carbon,15.2
-R.pomeroyi,10,Carbon,14.3
-R.pomeroyi,10,Carbon,20.5
-R.pomeroyi,10,Carbon,20.4
-R.pomeroyi,25,Carbon,13.8
-R.pomeroyi,25,Carbon,13.9
-R.pomeroyi,25,Carbon,14.6
-R.pomeroyi,50,Carbon,14.6
-R.pomeroyi,50,Carbon,15.7
-R.pomeroyi,50,Carbon,15.3
-R.pomeroyi,50,Carbon,14.9
-R.pomeroyi,50,Carbon,15.5
-R.pomeroyi,50,Carbon,14.6
-Pseudoalteromonas sp (P26),0.6,Carbon,31.2
-Pseudoalteromonas sp (P26),0.6,Carbon,32.8
-Pseudoalteromonas sp (P26),0.6,Carbon,20.7
-Pseudoalteromonas sp (P26),0.6,Carbon,23.5
-Pseudoalteromonas sp (P26),0.6,Carbon,26.4
-Pseudoalteromonas sp (P26),0.6,Carbon,22.9
-Pseudoalteromonas sp (P26),2,Carbon,24.8
-Pseudoalteromonas sp (P26),2,Carbon,28.7
-Pseudoalteromonas sp (P26),2,Carbon,31.9
-Pseudoalteromonas sp (P26),10,Carbon,22.3
-Pseudoalteromonas sp (P26),10,Carbon,21
-Pseudoalteromonas sp (P26),10,Carbon,20.4
-Pseudoalteromonas sp (P26),10,Carbon,58.8
-Pseudoalteromonas sp (P26),10,Carbon,28
-Pseudoalteromonas sp (P26),10,Carbon,30.7
-Pseudoalteromonas sp (P26),25,Carbon,22.7
-Pseudoalteromonas sp (P26),25,Carbon,22.3
-Pseudoalteromonas sp (P26),25,Carbon,21.2
-Pseudoalteromonas sp (P26),50,Carbon,20.4
-Pseudoalteromonas sp (P26),50,Carbon,29.6
-Pseudoalteromonas sp (P26),50,Carbon,22.6
-Pseudoalteromonas sp (P26),50,Carbon,20.6
-Pseudoalteromonas sp (P26),50,Carbon,39.3
-Pseudoalteromonas sp (P2),0.6,Carbon,23.7
-Pseudoalteromonas sp (P2),0.6,Carbon,25.6
-Pseudoalteromonas sp (P2),0.6,Carbon,7.03
-Pseudoalteromonas sp (P2),10,Carbon,29
-Pseudoalteromonas sp (P2),10,Carbon,21.4
-Pseudoalteromonas sp (P2),10,Carbon,23.7
-Pseudoalteromonas sp (P2),25,Carbon,22.5
-Pseudoalteromonas sp (P2),25,Carbon,22.1
-Pseudoalteromonas sp (P2),25,Carbon,20.2
-Dokdonia sp,0.6,C:N ratio,4.85
-Dokdonia sp,0.6,C:N ratio,4.27
-Dokdonia sp,0.6,C:N ratio,4.65
-Dokdonia sp,0.6,C:N ratio,5.59
-Dokdonia sp,2,C:N ratio,4.38
-Dokdonia sp,2,C:N ratio,4.1
-Dokdonia sp,2,C:N ratio,4.65
-Dokdonia sp,2,C:N ratio,4.5
-Dokdonia sp,2,C:N ratio,4.21
-Dokdonia sp,2,C:N ratio,4.35
-Dokdonia sp,2,C:N ratio,4.24
-Dokdonia sp,2,C:N ratio,3.7
-Dokdonia sp,2,C:N ratio,5.48
-Dokdonia sp,2,C:N ratio,4.65
-Dokdonia sp,10,C:N ratio,4.65
-Dokdonia sp,10,C:N ratio,4.77
-Dokdonia sp,10,C:N ratio,4.26
-Dokdonia sp,10,C:N ratio,4.38
-Dokdonia sp,10,C:N ratio,3.12
-Dokdonia sp,10,C:N ratio,4.12
-Dokdonia sp,10,C:N ratio,4.61
-Dokdonia sp,10,C:N ratio,4.69
-Dokdonia sp,10,C:N ratio,4.12
-Dokdonia sp,10,C:N ratio,4.77
-Dokdonia sp,10,C:N ratio,4.43
-Dokdonia sp,10,C:N ratio,4.27
-Dokdonia sp,10,C:N ratio,4.29
-Dokdonia sp,10,C:N ratio,4.32
-Dokdonia sp,10,C:N ratio,4.38
-Dokdonia sp,25,C:N ratio,4.67
-Dokdonia sp,25,C:N ratio,4.55
-Dokdonia sp,25,C:N ratio,4.67
-Dokdonia sp,25,C:N ratio,4.27
-Dokdonia sp,25,C:N ratio,5.35
-Dokdonia sp,25,C:N ratio,4.28
-Dokdonia sp,25,C:N ratio,4.06
-Dokdonia sp,25,C:N ratio,4.27
-Dokdonia sp,25,C:N ratio,4.53
-Dokdonia sp,50,C:N ratio,4.56
-Dokdonia sp,50,C:N ratio,4.64
-Dokdonia sp,50,C:N ratio,4.52
-Dokdonia sp,50,C:N ratio,4.65
-Dokdonia sp,50,C:N ratio,4.34
-Dokdonia sp,50,C:N ratio,4.42
-Dokdonia sp,50,C:N ratio,4.27
-Dokdonia sp,50,C:N ratio,4.27
-Dokdonia sp,50,C:N ratio,4.69
-R.pomeroyi,0.6,C:N ratio,4.1
-R.pomeroyi,0.6,C:N ratio,4.45
-R.pomeroyi,0.6,C:N ratio,4.05
-R.pomeroyi,0.6,C:N ratio,3.27
-R.pomeroyi,0.6,C:N ratio,3.99
-R.pomeroyi,0.6,C:N ratio,4.04
-R.pomeroyi,0.6,C:N ratio,3.95
-R.pomeroyi,2,C:N ratio,4.3
-R.pomeroyi,2,C:N ratio,4.05
-R.pomeroyi,2,C:N ratio,4.21
-R.pomeroyi,2,C:N ratio,4.25
-R.pomeroyi,10,C:N ratio,4.15
-R.pomeroyi,10,C:N ratio,4.13
-R.pomeroyi,10,C:N ratio,4.02
-R.pomeroyi,10,C:N ratio,4.14
-R.pomeroyi,10,C:N ratio,4.06
-R.pomeroyi,10,C:N ratio,4.18
-R.pomeroyi,10,C:N ratio,4.07
-R.pomeroyi,25,C:N ratio,4.08
-R.pomeroyi,25,C:N ratio,3.96
-R.pomeroyi,25,C:N ratio,4.55
-R.pomeroyi,50,C:N ratio,5.09
-R.pomeroyi,50,C:N ratio,3.85
-R.pomeroyi,50,C:N ratio,4.15
-R.pomeroyi,50,C:N ratio,4.2
-R.pomeroyi,50,C:N ratio,3.9
-R.pomeroyi,50,C:N ratio,3.99
-Pseudoalteromonas sp (P26),0.6,C:N ratio,4.44
-Pseudoalteromonas sp (P26),0.6,C:N ratio,4.41
-Pseudoalteromonas sp (P26),0.6,C:N ratio,2.98
-Pseudoalteromonas sp (P26),0.6,C:N ratio,3.6
-Pseudoalteromonas sp (P26),0.6,C:N ratio,4.12
-Pseudoalteromonas sp (P26),0.6,C:N ratio,3.88
-Pseudoalteromonas sp (P26),2,C:N ratio,5.56
-Pseudoalteromonas sp (P26),2,C:N ratio,3.98
-Pseudoalteromonas sp (P26),2,C:N ratio,4.1
-Pseudoalteromonas sp (P26),10,C:N ratio,4.38
-Pseudoalteromonas sp (P26),10,C:N ratio,4.18
-Pseudoalteromonas sp (P26),10,C:N ratio,4.48
-Pseudoalteromonas sp (P26),10,C:N ratio,4.49
-Pseudoalteromonas sp (P26),10,C:N ratio,3.69
-Pseudoalteromonas sp (P26),10,C:N ratio,4.1
-Pseudoalteromonas sp (P26),25,C:N ratio,4.2
-Pseudoalteromonas sp (P26),25,C:N ratio,4.12
-Pseudoalteromonas sp (P26),25,C:N ratio,4.09
-Pseudoalteromonas sp (P26),50,C:N ratio,4.02
-Pseudoalteromonas sp (P26),50,C:N ratio,4.12
-Pseudoalteromonas sp (P26),50,C:N ratio,3.84
-Pseudoalteromonas sp (P26),50,C:N ratio,4.11
-Pseudoalteromonas sp (P26),50,C:N ratio,4.11
-Pseudoalteromonas sp (P2),0.6,C:N ratio,3.79
-Pseudoalteromonas sp (P2),0.6,C:N ratio,6.92
-Pseudoalteromonas sp (P2),0.6,C:N ratio,4.23
-Pseudoalteromonas sp (P2),10,C:N ratio,3.72
-Pseudoalteromonas sp (P2),10,C:N ratio,3.57
-Pseudoalteromonas sp (P2),10,C:N ratio,3.73
-Pseudoalteromonas sp (P2),25,C:N ratio,3.66
-Pseudoalteromonas sp (P2),25,C:N ratio,3.15
-Pseudoalteromonas sp (P2),25,C:N ratio,3.79
-Dokdonia sp,0.6,Phosphorous,0.16
-Dokdonia sp,0.6,Phosphorous,0.16
-Dokdonia sp,0.6,Phosphorous,0.2
-Dokdonia sp,0.6,Phosphorous,0.3
-Dokdonia sp,2,Phosphorous,0.59
-Dokdonia sp,2,Phosphorous,0.07
-Dokdonia sp,2,Phosphorous,0.07
-Dokdonia sp,2,Phosphorous,0.07
-Dokdonia sp,10,Phosphorous,0.11
-Dokdonia sp,10,Phosphorous,0.1
-Dokdonia sp,10,Phosphorous,0.12
-Dokdonia sp,10,Phosphorous,0.1
-Dokdonia sp,10,Phosphorous,0.11
-Dokdonia sp,10,Phosphorous,0.13
-Dokdonia sp,10,Phosphorous,0.15
-Dokdonia sp,25,Phosphorous,0.14
-Dokdonia sp,25,Phosphorous,0.17
-Dokdonia sp,25,Phosphorous,0.17
-Dokdonia sp,25,Phosphorous,0.13
-Dokdonia sp,25,Phosphorous,0.11
-Dokdonia sp,25,Phosphorous,0.17
-Dokdonia sp,50,Phosphorous,0.11
-Dokdonia sp,50,Phosphorous,0.1
-Dokdonia sp,50,Phosphorous,0.11
-R.pomeroyi,0.6,Phosphorous,0.2
-R.pomeroyi,0.6,Phosphorous,0.2
-R.pomeroyi,0.6,Phosphorous,0.25
-R.pomeroyi,2,Phosphorous,0.2
-R.pomeroyi,2,Phosphorous,0.06
-R.pomeroyi,2,Phosphorous,0.17
-R.pomeroyi,2,Phosphorous,0.14
-R.pomeroyi,10,Phosphorous,0.2
-R.pomeroyi,10,Phosphorous,0.22
-R.pomeroyi,10,Phosphorous,0.22
-R.pomeroyi,50,Phosphorous,0.27
-R.pomeroyi,50,Phosphorous,0.21
-R.pomeroyi,50,Phosphorous,0.26
-Pseudoalteromonas sp (P26),0.6,Phosphorous,0.51
-Pseudoalteromonas sp (P26),0.6,Phosphorous,0.48
-Pseudoalteromonas sp (P26),0.6,Phosphorous,0.68
-Pseudoalteromonas sp (P26),2,Phosphorous,0.41
-Pseudoalteromonas sp (P26),2,Phosphorous,0.58
-Pseudoalteromonas sp (P26),2,Phosphorous,0.73
-Pseudoalteromonas sp (P26),10,Phosphorous,0.35
-Pseudoalteromonas sp (P26),10,Phosphorous,0.21
-Pseudoalteromonas sp (P26),10,Phosphorous,0.56
-Pseudoalteromonas sp (P26),50,Phosphorous,0.53
-Pseudoalteromonas sp (P26),50,Phosphorous,0.47
-Pseudoalteromonas sp (P26),50,Phosphorous,0.49
-Pseudoalteromonas sp (P2),0.6,Phosphorous,0.46
-Pseudoalteromonas sp (P2),0.6,Phosphorous,0.54
-Pseudoalteromonas sp (P2),0.6,Phosphorous,0.59
-Pseudoalteromonas sp (P2),10,Phosphorous,0.51
-Pseudoalteromonas sp (P2),10,Phosphorous,0.48
-Pseudoalteromonas sp (P2),10,Phosphorous,0.45
-Pseudoalteromonas sp (P2),25,Phosphorous,0.55
-Pseudoalteromonas sp (P2),25,Phosphorous,0.74
-Pseudoalteromonas sp (P2),25,Phosphorous,0.47
-Dokdonia sp,0.6,Sulfur,0.09
-Dokdonia sp,0.6,Sulfur,0.11
-Dokdonia sp,0.6,Sulfur,0.21
-Dokdonia sp,0.6,Sulfur,0.23
-Dokdonia sp,2,Sulfur,0.44
-Dokdonia sp,2,Sulfur,0.05
-Dokdonia sp,2,Sulfur,0.07
-Dokdonia sp,2,Sulfur,0.1
-Dokdonia sp,10,Sulfur,0.11
-Dokdonia sp,10,Sulfur,0.09
-Dokdonia sp,10,Sulfur,0.08
-Dokdonia sp,10,Sulfur,0.09
-Dokdonia sp,10,Sulfur,0.03
-Dokdonia sp,10,Sulfur,0.26
-Dokdonia sp,10,Sulfur,0.07
-Dokdonia sp,25,Sulfur,0.08
-Dokdonia sp,25,Sulfur,0.08
-Dokdonia sp,25,Sulfur,0.12
-Dokdonia sp,25,Sulfur,0.1
-Dokdonia sp,25,Sulfur,0.13
-Dokdonia sp,25,Sulfur,0.24
-Dokdonia sp,50,Sulfur,0.06
-Dokdonia sp,50,Sulfur,0.07
-Dokdonia sp,50,Sulfur,0.07
-R.pomeroyi,0.6,Sulfur,0.15
-R.pomeroyi,0.6,Sulfur,0.21
-R.pomeroyi,2,Sulfur,0.15
-R.pomeroyi,2,Sulfur,0.11
-R.pomeroyi,2,Sulfur,0.14
-R.pomeroyi,2,Sulfur,0.14
-R.pomeroyi,10,Sulfur,0.09
-R.pomeroyi,10,Sulfur,0.14
-R.pomeroyi,10,Sulfur,0.13
-R.pomeroyi,50,Sulfur,0.22
-R.pomeroyi,50,Sulfur,0.14
-R.pomeroyi,50,Sulfur,0.16
-Pseudoalteromonas sp (P26),0.6,Sulfur,0.18
-Pseudoalteromonas sp (P26),0.6,Sulfur,0.34
-Pseudoalteromonas sp (P26),0.6,Sulfur,0.34
-Pseudoalteromonas sp (P26),2,Sulfur,0.3
-Pseudoalteromonas sp (P26),2,Sulfur,0.19
-Pseudoalteromonas sp (P26),2,Sulfur,0.39
-Pseudoalteromonas sp (P26),10,Sulfur,0.2
-Pseudoalteromonas sp (P26),10,Sulfur,0.17
-Pseudoalteromonas sp (P26),10,Sulfur,0.24
-Pseudoalteromonas sp (P26),50,Sulfur,0.22
-Pseudoalteromonas sp (P26),50,Sulfur,0.17
-Pseudoalteromonas sp (P26),50,Sulfur,0.19
-Pseudoalteromonas sp (P2),0.6,Sulfur,0.2
-Pseudoalteromonas sp (P2),0.6,Sulfur,0.25
-Pseudoalteromonas sp (P2),0.6,Sulfur,0.21
-Pseudoalteromonas sp (P2),10,Sulfur,0.19
-Pseudoalteromonas sp (P2),10,Sulfur,0.23
-Pseudoalteromonas sp (P2),10,Sulfur,0.15
-Pseudoalteromonas sp (P2),25,Sulfur,0.21
-Pseudoalteromonas sp (P2),25,Sulfur,0.3
-Dokdonia sp,0.6,S:P ratio,0.59
-Dokdonia sp,0.6,S:P ratio,0.69
-Dokdonia sp,0.6,S:P ratio,1.05
-Dokdonia sp,0.6,S:P ratio,0.77
-Dokdonia sp,2,S:P ratio,0.75
-Dokdonia sp,2,S:P ratio,0.74
-Dokdonia sp,2,S:P ratio,0.9
-Dokdonia sp,2,S:P ratio,1.45
-Dokdonia sp,2,S:P ratio,1
-Dokdonia sp,10,S:P ratio,0.9
-Dokdonia sp,10,S:P ratio,0.65
-Dokdonia sp,10,S:P ratio,0.94
-Dokdonia sp,10,S:P ratio,0.3
-Dokdonia sp,10,S:P ratio,2
-Dokdonia sp,10,S:P ratio,0.45
-Dokdonia sp,10,S:P ratio,0.54
-Dokdonia sp,25,S:P ratio,0.45
-Dokdonia sp,25,S:P ratio,0.71
-Dokdonia sp,25,S:P ratio,0.75
-Dokdonia sp,25,S:P ratio,1.18
-Dokdonia sp,25,S:P ratio,1.41
-Dokdonia sp,25,S:P ratio,0.56
-Dokdonia sp,50,S:P ratio,0.67
-Dokdonia sp,50,S:P ratio,0.6
-R.pomeroyi,0.6,S:P ratio,0.75
-R.pomeroyi,0.6,S:P ratio,0.84
-R.pomeroyi,2,S:P ratio,0.75
-R.pomeroyi,2,S:P ratio,1.75
-R.pomeroyi,2,S:P ratio,0.82
-R.pomeroyi,2,S:P ratio,1
-R.pomeroyi,10,S:P ratio,0.47
-R.pomeroyi,10,S:P ratio,0.64
-R.pomeroyi,10,S:P ratio,0.59
-R.pomeroyi,50,S:P ratio,0.81
-R.pomeroyi,50,S:P ratio,0.67
-R.pomeroyi,50,S:P ratio,0.62
-Pseudoalteromonas sp (P26),0.6,S:P ratio,0.35
-Pseudoalteromonas sp (P26),0.6,S:P ratio,0.71
-Pseudoalteromonas sp (P26),0.6,S:P ratio,0.5
-Pseudoalteromonas sp (P26),2,S:P ratio,0.73
-Pseudoalteromonas sp (P26),2,S:P ratio,0.33
-Pseudoalteromonas sp (P26),2,S:P ratio,0.53
-Pseudoalteromonas sp (P26),10,S:P ratio,0.57
-Pseudoalteromonas sp (P26),10,S:P ratio,0.81
-Pseudoalteromonas sp (P26),10,S:P ratio,0.43
-Pseudoalteromonas sp (P26),10,S:P ratio,0.42
-Pseudoalteromonas sp (P26),50,S:P ratio,0.36
-Pseudoalteromonas sp (P26),50,S:P ratio,0.39
-Pseudoalteromonas sp (P2),0.6,S:P ratio,0.43
-Pseudoalteromonas sp (P2),0.6,S:P ratio,0.46
-Pseudoalteromonas sp (P2),0.6,S:P ratio,0.36
-Pseudoalteromonas sp (P2),10,S:P ratio,0.37
-Pseudoalteromonas sp (P2),10,S:P ratio,0.48
-Pseudoalteromonas sp (P2),10,S:P ratio,0.33
-Pseudoalteromonas sp (P2),25,S:P ratio,0.38
-Pseudoalteromonas sp (P2),25,S:P ratio,0.41
-Pseudoalteromonas sp (P2),25,S:P ratio,0.6
+Strain,Cu_level,Macronutrient,Quota_mol_cell,Quota_fmol_cell
+Dokonia sp,0.6,Carbon,NA,NA
+Dokonia sp,0.6,Carbon,NA,NA
+Dokonia sp,0.6,Carbon,7.96E-15,7.96
+Dokonia sp,0.6,Carbon,1.08E-14,10.8
+Dokonia sp,0.6,Carbon,9.30E-15,9.3
+Dokonia sp,0.6,Carbon,8.94E-15,8.94
+Dokonia sp,2,Carbon,1.51E-14,15.1
+Dokonia sp,2,Carbon,1.37E-14,13.7
+Dokonia sp,2,Carbon,1.61E-14,16.1
+Dokonia sp,2,Carbon,1.03E-14,10.3
+Dokonia sp,2,Carbon,1.23E-14,12.3
+Dokonia sp,2,Carbon,1.20E-14,12
+Dokonia sp,2,Carbon,1.14E-14,11.4
+Dokonia sp,2,Carbon,6.36E-15,6.36
+Dokonia sp,2,Carbon,5.97E-15,5.97
+Dokonia sp,2,Carbon,5.76E-15,5.76
+Dokonia sp,10,Carbon,6.04E-15,6.04
+Dokonia sp,10,Carbon,7.73E-15,7.73
+Dokonia sp,10,Carbon,8.91E-15,8.91
+Dokonia sp,10,Carbon,7.14E-15,7.14
+Dokonia sp,10,Carbon,8.20E-15,8.2
+Dokonia sp,10,Carbon,8.56E-15,8.56
+Dokonia sp,10,Carbon,6.82E-15,6.82
+Dokonia sp,10,Carbon,6.61E-15,6.61
+Dokonia sp,10,Carbon,8.23E-15,8.23
+Dokonia sp,10,Carbon,8.21E-15,8.21
+Dokonia sp,10,Carbon,9.35E-15,9.35
+Dokonia sp,10,Carbon,6.28E-15,6.28
+Dokonia sp,10,Carbon,7.04E-15,7.04
+Dokonia sp,10,Carbon,6.48E-15,6.48
+Dokonia sp,10,Carbon,6.87E-15,6.87
+Dokonia sp,25,Carbon,1.12E-14,11.2
+Dokonia sp,25,Carbon,9.32E-15,9.32
+Dokonia sp,25,Carbon,6.86E-15,6.86
+Dokonia sp,25,Carbon,7.17E-15,7.17
+Dokonia sp,25,Carbon,6.69E-15,6.69
+Dokonia sp,25,Carbon,7.45E-15,7.45
+Dokonia sp,25,Carbon,6.30E-15,6.3
+Dokonia sp,25,Carbon,8.59E-15,8.59
+Dokonia sp,25,Carbon,1.11E-14,11.1
+Dokonia sp,50,Carbon,1.18E-14,11.8
+Dokonia sp,50,Carbon,8.68E-15,8.68
+Dokonia sp,50,Carbon,7.36E-15,7.36
+Dokonia sp,50,Carbon,8.19E-15,8.19
+Dokonia sp,50,Carbon,7.60E-15,7.6
+Dokonia sp,50,Carbon,7.21E-15,7.21
+Dokonia sp,50,Carbon,7.69E-15,7.69
+Dokonia sp,50,Carbon,6.53E-15,6.53
+Dokonia sp,50,Carbon,7.22E-15,7.22
+R.pomeroyi,0.6,Carbon,2.63E-14,26.3
+R.pomeroyi,0.6,Carbon,1.49E-14,14.9
+R.pomeroyi,0.6,Carbon,2.20E-14,22
+R.pomeroyi,0.6,Carbon,1.68E-14,16.8
+R.pomeroyi,0.6,Carbon,1.80E-14,18
+R.pomeroyi,0.6,Carbon,1.46E-14,14.6
+R.pomeroyi,0.6,Carbon,1.69E-14,16.9
+R.pomeroyi,2,Carbon,1.74E-14,17.4
+R.pomeroyi,2,Carbon,1.50E-14,15
+R.pomeroyi,2,Carbon,1.47E-14,14.7
+R.pomeroyi,2,Carbon,1.42E-14,14.2
+R.pomeroyi,10,Carbon,1.48E-14,14.8
+R.pomeroyi,10,Carbon,2.37E-14,23.7
+R.pomeroyi,10,Carbon,1.60E-14,16
+R.pomeroyi,10,Carbon,1.52E-14,15.2
+R.pomeroyi,10,Carbon,1.43E-14,14.3
+R.pomeroyi,10,Carbon,2.05E-14,20.5
+R.pomeroyi,10,Carbon,2.04E-14,20.4
+R.pomeroyi,25,Carbon,1.38E-14,13.8
+R.pomeroyi,25,Carbon,1.39E-14,13.9
+R.pomeroyi,25,Carbon,1.46E-14,14.6
+R.pomeroyi,50,Carbon,1.46E-14,14.6
+R.pomeroyi,50,Carbon,1.57E-14,15.7
+R.pomeroyi,50,Carbon,1.53E-14,15.3
+R.pomeroyi,50,Carbon,1.49E-14,14.9
+R.pomeroyi,50,Carbon,1.55E-14,15.5
+R.pomeroyi,50,Carbon,1.46E-14,14.6
+Pseudoalteromonas sp (26),0.6,Carbon,3.12E-14,31.2
+Pseudoalteromonas sp (26),0.6,Carbon,3.28E-14,32.8
+Pseudoalteromonas sp (26),0.6,Carbon,2.07E-14,20.7
+Pseudoalteromonas sp (26),0.6,Carbon,2.35E-14,23.5
+Pseudoalteromonas sp (26),0.6,Carbon,2.64E-14,26.4
+Pseudoalteromonas sp (26),0.6,Carbon,2.29E-14,22.9
+Pseudoalteromonas sp (26),2,Carbon,2.48E-14,24.8
+Pseudoalteromonas sp (26),2,Carbon,2.87E-14,28.7
+Pseudoalteromonas sp (26),2,Carbon,3.19E-14,31.9
+Pseudoalteromonas sp (26),10,Carbon,2.23E-14,22.3
+Pseudoalteromonas sp (26),10,Carbon,2.10E-14,21
+Pseudoalteromonas sp (26),10,Carbon,2.04E-14,20.4
+Pseudoalteromonas sp (26),10,Carbon,5.88E-14,58.8
+Pseudoalteromonas sp (26),10,Carbon,2.80E-14,28
+Pseudoalteromonas sp (26),10,Carbon,3.07E-14,30.7
+Pseudoalteromonas sp (26),25,Carbon,2.27E-14,22.7
+Pseudoalteromonas sp (26),25,Carbon,2.23E-14,22.3
+Pseudoalteromonas sp (26),25,Carbon,2.12E-14,21.2
+Pseudoalteromonas sp (26),50,Carbon,2.04E-14,20.4
+Pseudoalteromonas sp (26),50,Carbon,2.96E-14,29.6
+Pseudoalteromonas sp (26),50,Carbon,2.26E-14,22.6
+Pseudoalteromonas sp (26),50,Carbon,NA,NA
+Pseudoalteromonas sp (26),50,Carbon,2.06E-14,20.6
+Pseudoalteromonas sp (26),50,Carbon,3.93E-14,39.3
+Pseudoalteromonas sp (P2),0.6,Carbon,2.37E-14,23.7
+Pseudoalteromonas sp (P2),0.6,Carbon,2.56E-14,25.6
+Pseudoalteromonas sp (P2),0.6,Carbon,7.03E-15,7.03
+Pseudoalteromonas sp (P2),10,Carbon,2.90E-14,29
+Pseudoalteromonas sp (P2),10,Carbon,2.14E-14,21.4
+Pseudoalteromonas sp (P2),10,Carbon,2.37E-14,23.7
+Pseudoalteromonas sp (P2),25,Carbon,2.25E-14,22.5
+Pseudoalteromonas sp (P2),25,Carbon,2.21E-14,22.1
+Pseudoalteromonas sp (P2),25,Carbon,2.02E-14,20.2
+Dokonia sp,0.6,Nitrogen,NA,NA
+Dokonia sp,0.6,Nitrogen,NA,NA
+Dokonia sp,0.6,Nitrogen,1.64E-15,1.64
+Dokonia sp,0.6,Nitrogen,2.53E-15,2.53
+Dokonia sp,0.6,Nitrogen,2.00E-15,2
+Dokonia sp,0.6,Nitrogen,1.60E-15,1.6
+Dokonia sp,2,Nitrogen,3.45E-15,3.45
+Dokonia sp,2,Nitrogen,3.34E-15,3.34
+Dokonia sp,2,Nitrogen,3.46E-15,3.46
+Dokonia sp,2,Nitrogen,2.29E-15,2.29
+Dokonia sp,2,Nitrogen,2.92E-15,2.92
+Dokonia sp,2,Nitrogen,2.76E-15,2.76
+Dokonia sp,2,Nitrogen,2.69E-15,2.69
+Dokonia sp,2,Nitrogen,1.72E-15,1.72
+Dokonia sp,2,Nitrogen,1.09E-15,1.09
+Dokonia sp,2,Nitrogen,1.24E-15,1.24
+Dokonia sp,10,Nitrogen,1.30E-15,1.3
+Dokonia sp,10,Nitrogen,1.62E-15,1.62
+Dokonia sp,10,Nitrogen,2.09E-15,2.09
+Dokonia sp,10,Nitrogen,1.63E-15,1.63
+Dokonia sp,10,Nitrogen,2.63E-15,2.63
+Dokonia sp,10,Nitrogen,2.08E-15,2.08
+Dokonia sp,10,Nitrogen,1.48E-15,1.48
+Dokonia sp,10,Nitrogen,1.41E-15,1.41
+Dokonia sp,10,Nitrogen,2.00E-15,2
+Dokonia sp,10,Nitrogen,1.72E-15,1.72
+Dokonia sp,10,Nitrogen,2.11E-15,2.11
+Dokonia sp,10,Nitrogen,1.47E-15,1.47
+Dokonia sp,10,Nitrogen,1.64E-15,1.64
+Dokonia sp,10,Nitrogen,1.50E-15,1.5
+Dokonia sp,10,Nitrogen,1.57E-15,1.57
+Dokonia sp,25,Nitrogen,2.40E-15,2.4
+Dokonia sp,25,Nitrogen,2.05E-15,2.05
+Dokonia sp,25,Nitrogen,1.47E-15,1.47
+Dokonia sp,25,Nitrogen,1.68E-15,1.68
+Dokonia sp,25,Nitrogen,1.25E-15,1.25
+Dokonia sp,25,Nitrogen,1.74E-15,1.74
+Dokonia sp,25,Nitrogen,1.55E-15,1.55
+Dokonia sp,25,Nitrogen,2.01E-15,2.01
+Dokonia sp,25,Nitrogen,2.45E-15,2.45
+Dokonia sp,50,Nitrogen,2.59E-15,2.59
+Dokonia sp,50,Nitrogen,1.87E-15,1.87
+Dokonia sp,50,Nitrogen,1.63E-15,1.63
+Dokonia sp,50,Nitrogen,1.76E-15,1.76
+Dokonia sp,50,Nitrogen,1.75E-15,1.75
+Dokonia sp,50,Nitrogen,1.63E-15,1.63
+Dokonia sp,50,Nitrogen,1.80E-15,1.8
+Dokonia sp,50,Nitrogen,1.53E-15,1.53
+Dokonia sp,50,Nitrogen,1.54E-15,1.54
+R.pomeroyi,0.6,Nitrogen,6.42E-15,6.42
+R.pomeroyi,0.6,Nitrogen,3.35E-15,3.35
+R.pomeroyi,0.6,Nitrogen,5.43E-15,5.43
+R.pomeroyi,0.6,Nitrogen,5.13E-15,5.13
+R.pomeroyi,0.6,Nitrogen,4.51E-15,4.51
+R.pomeroyi,0.6,Nitrogen,3.61E-15,3.61
+R.pomeroyi,0.6,Nitrogen,4.28E-15,4.28
+R.pomeroyi,2,Nitrogen,4.05E-15,4.05
+R.pomeroyi,2,Nitrogen,3.70E-15,3.7
+R.pomeroyi,2,Nitrogen,3.49E-15,3.49
+R.pomeroyi,2,Nitrogen,3.34E-15,3.34
+R.pomeroyi,10,Nitrogen,3.57E-15,3.57
+R.pomeroyi,10,Nitrogen,5.74E-15,5.74
+R.pomeroyi,10,Nitrogen,3.98E-15,3.98
+R.pomeroyi,10,Nitrogen,3.67E-15,3.67
+R.pomeroyi,10,Nitrogen,3.52E-15,3.52
+R.pomeroyi,10,Nitrogen,4.91E-15,4.91
+R.pomeroyi,10,Nitrogen,5.01E-15,5.01
+R.pomeroyi,25,Nitrogen,3.38E-15,3.38
+R.pomeroyi,25,Nitrogen,3.51E-15,3.51
+R.pomeroyi,25,Nitrogen,3.21E-15,3.21
+R.pomeroyi,50,Nitrogen,2.87E-15,2.87
+R.pomeroyi,50,Nitrogen,4.08E-15,4.08
+R.pomeroyi,50,Nitrogen,3.69E-15,3.69
+R.pomeroyi,50,Nitrogen,3.55E-15,3.55
+R.pomeroyi,50,Nitrogen,3.97E-15,3.97
+R.pomeroyi,50,Nitrogen,3.66E-15,3.66
+Pseudoalteromonas sp (26),0.6,Nitrogen,7.03E-15,7.03
+Pseudoalteromonas sp (26),0.6,Nitrogen,7.44E-15,7.44
+Pseudoalteromonas sp (26),0.6,Nitrogen,6.94E-15,6.94
+Pseudoalteromonas sp (26),0.6,Nitrogen,6.53E-15,6.53
+Pseudoalteromonas sp (26),0.6,Nitrogen,6.41E-15,6.41
+Pseudoalteromonas sp (26),0.6,Nitrogen,5.90E-15,5.9
+Pseudoalteromonas sp (26),2,Nitrogen,4.46E-15,4.46
+Pseudoalteromonas sp (26),2,Nitrogen,7.21E-15,7.21
+Pseudoalteromonas sp (26),2,Nitrogen,7.78E-15,7.78
+Pseudoalteromonas sp (26),10,Nitrogen,5.09E-15,5.09
+Pseudoalteromonas sp (26),10,Nitrogen,5.02E-15,5.02
+Pseudoalteromonas sp (26),10,Nitrogen,4.55E-15,4.55
+Pseudoalteromonas sp (26),10,Nitrogen,1.31E-14,13.1
+Pseudoalteromonas sp (26),10,Nitrogen,7.58E-15,7.58
+Pseudoalteromonas sp (26),10,Nitrogen,7.48E-15,7.48
+Pseudoalteromonas sp (26),25,Nitrogen,5.41E-15,5.41
+Pseudoalteromonas sp (26),25,Nitrogen,5.41E-15,5.41
+Pseudoalteromonas sp (26),25,Nitrogen,5.18E-15,5.18
+Pseudoalteromonas sp (26),50,Nitrogen,5.08E-15,5.08
+Pseudoalteromonas sp (26),50,Nitrogen,7.19E-15,7.19
+Pseudoalteromonas sp (26),50,Nitrogen,5.88E-15,5.88
+Pseudoalteromonas sp (26),50,Nitrogen,NA,NA
+Pseudoalteromonas sp (26),50,Nitrogen,5.01E-15,5.01
+Pseudoalteromonas sp (26),50,Nitrogen,9.56E-15,9.56
+Pseudoalteromonas sp (P2),0.6,Nitrogen,6.25E-15,6.25
+Pseudoalteromonas sp (P2),0.6,Nitrogen,3.70E-15,3.7
+Pseudoalteromonas sp (P2),0.6,Nitrogen,1.66E-15,1.66
+Pseudoalteromonas sp (P2),10,Nitrogen,7.80E-15,7.8
+Pseudoalteromonas sp (P2),10,Nitrogen,6.00E-15,6
+Pseudoalteromonas sp (P2),10,Nitrogen,6.36E-15,6.36
+Pseudoalteromonas sp (P2),25,Nitrogen,6.14E-15,6.14
+Pseudoalteromonas sp (P2),25,Nitrogen,7.01E-15,7.01
+Pseudoalteromonas sp (P2),25,Nitrogen,5.33E-15,5.33
+Dokonia sp,0.6,C:N ratio,NA,NA
+Dokonia sp,0.6,C:N ratio,NA,NA
+Dokonia sp,0.6,C:N ratio,4.853658537,4.853658537
+Dokonia sp,0.6,C:N ratio,4.268774704,4.268774704
+Dokonia sp,0.6,C:N ratio,4.65,4.65
+Dokonia sp,0.6,C:N ratio,5.5875,5.5875
+Dokonia sp,2,C:N ratio,4.376811594,4.376811594
+Dokonia sp,2,C:N ratio,4.101796407,4.101796407
+Dokonia sp,2,C:N ratio,4.653179191,4.653179191
+Dokonia sp,2,C:N ratio,4.497816594,4.497816594
+Dokonia sp,2,C:N ratio,4.212328767,4.212328767
+Dokonia sp,2,C:N ratio,4.347826087,4.347826087
+Dokonia sp,2,C:N ratio,4.237918216,4.237918216
+Dokonia sp,2,C:N ratio,3.697674419,3.697674419
+Dokonia sp,2,C:N ratio,5.47706422,5.47706422
+Dokonia sp,2,C:N ratio,4.64516129,4.64516129
+Dokonia sp,10,C:N ratio,4.646153846,4.646153846
+Dokonia sp,10,C:N ratio,4.771604938,4.771604938
+Dokonia sp,10,C:N ratio,4.263157895,4.263157895
+Dokonia sp,10,C:N ratio,4.380368098,4.380368098
+Dokonia sp,10,C:N ratio,3.117870722,3.117870722
+Dokonia sp,10,C:N ratio,4.115384615,4.115384615
+Dokonia sp,10,C:N ratio,4.608108108,4.608108108
+Dokonia sp,10,C:N ratio,4.687943262,4.687943262
+Dokonia sp,10,C:N ratio,4.115,4.115
+Dokonia sp,10,C:N ratio,4.773255814,4.773255814
+Dokonia sp,10,C:N ratio,4.431279621,4.431279621
+Dokonia sp,10,C:N ratio,4.272108844,4.272108844
+Dokonia sp,10,C:N ratio,4.292682927,4.292682927
+Dokonia sp,10,C:N ratio,4.32,4.32
+Dokonia sp,10,C:N ratio,4.375796178,4.375796178
+Dokonia sp,25,C:N ratio,4.666666667,4.666666667
+Dokonia sp,25,C:N ratio,4.546341463,4.546341463
+Dokonia sp,25,C:N ratio,4.666666667,4.666666667
+Dokonia sp,25,C:N ratio,4.267857143,4.267857143
+Dokonia sp,25,C:N ratio,5.352,5.35E+00
+Dokonia sp,25,C:N ratio,4.281609195,4.281609195
+Dokonia sp,25,C:N ratio,4.064516129,4.064516129
+Dokonia sp,25,C:N ratio,4.273631841,4.273631841
+Dokonia sp,25,C:N ratio,4.530612245,4.530612245
+Dokonia sp,50,C:N ratio,4.555984556,4.555984556
+Dokonia sp,50,C:N ratio,4.64171123,4.64171123
+Dokonia sp,50,C:N ratio,4.515337423,4.515337423
+Dokonia sp,50,C:N ratio,4.653409091,4.653409091
+Dokonia sp,50,C:N ratio,4.342857143,4.342857143
+Dokonia sp,50,C:N ratio,4.423312883,4.423312883
+Dokonia sp,50,C:N ratio,4.272222222,4.272222222
+Dokonia sp,50,C:N ratio,4.267973856,4.267973856
+Dokonia sp,50,C:N ratio,4.688311688,4.688311688
+R.pomeroyi,0.6,C:N ratio,4.096573209,4.096573209
+R.pomeroyi,0.6,C:N ratio,4.447761194,4.447761194
+R.pomeroyi,0.6,C:N ratio,4.051565378,4.051565378
+R.pomeroyi,0.6,C:N ratio,3.274853801,3.274853801
+R.pomeroyi,0.6,C:N ratio,3.99113082,3.99113082
+R.pomeroyi,0.6,C:N ratio,4.04432133,4.04432133
+R.pomeroyi,0.6,C:N ratio,3.948598131,3.948598131
+R.pomeroyi,2,C:N ratio,4.296296296,4.296296296
+R.pomeroyi,2,C:N ratio,4.054054054,4.054054054
+R.pomeroyi,2,C:N ratio,4.212034384,4.212034384
+R.pomeroyi,2,C:N ratio,4.251497006,4.251497006
+R.pomeroyi,10,C:N ratio,4.145658263,4.145658263
+R.pomeroyi,10,C:N ratio,4.128919861,4.128919861
+R.pomeroyi,10,C:N ratio,4.020100503,4.020100503
+R.pomeroyi,10,C:N ratio,4.141689373,4.141689373
+R.pomeroyi,10,C:N ratio,4.0625,4.06E+00
+R.pomeroyi,10,C:N ratio,4.175152749,4.175152749
+R.pomeroyi,10,C:N ratio,4.071856287,4.071856287
+R.pomeroyi,25,C:N ratio,4.082840237,4.082840237
+R.pomeroyi,25,C:N ratio,3.96011396,3.96011396
+R.pomeroyi,25,C:N ratio,4.548286604,4.548286604
+R.pomeroyi,50,C:N ratio,5.087108014,5.087108014
+R.pomeroyi,50,C:N ratio,3.848039216,3.848039216
+R.pomeroyi,50,C:N ratio,4.146341463,4.146341463
+R.pomeroyi,50,C:N ratio,4.197183099,4.197183099
+R.pomeroyi,50,C:N ratio,3.904282116,3.904282116
+R.pomeroyi,50,C:N ratio,3.989071038,3.989071038
+Pseudoalteromonas sp (26),0.6,C:N ratio,4.438122333,4.438122333
+Pseudoalteromonas sp (26),0.6,C:N ratio,4.408602151,4.408602151
+Pseudoalteromonas sp (26),0.6,C:N ratio,2.982708934,2.982708934
+Pseudoalteromonas sp (26),0.6,C:N ratio,3.598774885,3.598774885
+Pseudoalteromonas sp (26),0.6,C:N ratio,4.118564743,4.118564743
+Pseudoalteromonas sp (26),0.6,C:N ratio,3.881355932,3.881355932
+Pseudoalteromonas sp (26),2,C:N ratio,5.560538117,5.560538117
+Pseudoalteromonas sp (26),2,C:N ratio,3.980582524,3.980582524
+Pseudoalteromonas sp (26),2,C:N ratio,4.100257069,4.100257069
+Pseudoalteromonas sp (26),10,C:N ratio,4.381139489,4.381139489
+Pseudoalteromonas sp (26),10,C:N ratio,4.183266932,4.183266932
+Pseudoalteromonas sp (26),10,C:N ratio,4.483516484,4.483516484
+Pseudoalteromonas sp (26),10,C:N ratio,4.488549618,4.488549618
+Pseudoalteromonas sp (26),10,C:N ratio,3.693931398,3.693931398
+Pseudoalteromonas sp (26),10,C:N ratio,4.104278075,4.104278075
+Pseudoalteromonas sp (26),25,C:N ratio,4.195933457,4.195933457
+Pseudoalteromonas sp (26),25,C:N ratio,4.121996303,4.121996303
+Pseudoalteromonas sp (26),25,C:N ratio,4.092664093,4.092664093
+Pseudoalteromonas sp (26),50,C:N ratio,4.015748031,4.015748031
+Pseudoalteromonas sp (26),50,C:N ratio,4.116828929,4.116828929
+Pseudoalteromonas sp (26),50,C:N ratio,3.843537415,3.843537415
+Pseudoalteromonas sp (26),50,C:N ratio,NA,NA
+Pseudoalteromonas sp (26),50,C:N ratio,4.111776447,4.111776447
+Pseudoalteromonas sp (26),50,C:N ratio,4.110878661,4.110878661
+Pseudoalteromonas sp (P2),0.6,C:N ratio,3.792,3.79E+00
+Pseudoalteromonas sp (P2),0.6,C:N ratio,6.918918919,6.918918919
+Pseudoalteromonas sp (P2),0.6,C:N ratio,4.234939759,4.234939759
+Pseudoalteromonas sp (P2),10,C:N ratio,3.717948718,3.717948718
+Pseudoalteromonas sp (P2),10,C:N ratio,3.566666667,3.566666667
+Pseudoalteromonas sp (P2),10,C:N ratio,3.726415094,3.726415094
+Pseudoalteromonas sp (P2),25,C:N ratio,3.664495114,3.664495114
+Pseudoalteromonas sp (P2),25,C:N ratio,3.152639087,3.152639087
+Pseudoalteromonas sp (P2),25,C:N ratio,3.789868668,3.789868668
+Dokonia sp,0.1,Phosphorous,1.55E-16,0.155167177
+Dokonia sp,0.1,Phosphorous,1.57E-16,0.157084129
+Dokonia sp,0.1,Phosphorous,2.03E-16,0.20255097
+Dokonia sp,0.1,Phosphorous,2.99E-16,0.298879706
+Dokonia sp,2,Phosphorous,5.87E-16,0.586788803
+Dokonia sp,2,Phosphorous,NA,NA
+Dokonia sp,2,Phosphorous,7.21E-17,0.072052312
+Dokonia sp,2,Phosphorous,7.29E-17,0.072949093
+Dokonia sp,2,Phosphorous,1.83E-16,0.182516907
+Dokonia sp,2,Phosphorous,6.93E-17,0.069277007
+Dokonia sp,10,Phosphorous,1.10E-16,0.109944119
+Dokonia sp,10,Phosphorous,1.03E-16,0.102995478
+Dokonia sp,10,Phosphorous,1.18E-16,0.118298482
+Dokonia sp,10,Phosphorous,9.51E-17,0.095132837
+Dokonia sp,10,Phosphorous,1.09E-16,0.109140049
+Dokonia sp,10,Phosphorous,1.30E-16,0.130230408
+Dokonia sp,10,Phosphorous,1.48E-16,0.148122246
+Dokonia sp,25,Phosphorous,1.36E-16,0.136282325
+Dokonia sp,25,Phosphorous,1.66E-16,0.166039938
+Dokonia sp,25,Phosphorous,1.68E-16,0.168115193
+Dokonia sp,25,Phosphorous,1.34E-16,0.133992067
+Dokonia sp,25,Phosphorous,1.12E-16,0.111735787
+Dokonia sp,25,Phosphorous,1.69E-16,0.168512301
+Dokonia sp,50,Phosphorous,1.08E-16,0.107936035
+Dokonia sp,50,Phosphorous,9.85E-17,0.098546071
+Dokonia sp,50,Phosphorous,1.13E-16,0.112944121
+R.pomeroyi,0.1,Phosphorous,1.97E-16,0.196999758
+R.pomeroyi,0.1,Phosphorous,1.97E-16,0.196999758
+R.pomeroyi,0.1,Phosphorous,2.45E-16,0.244903753
+R.pomeroyi,2,Phosphorous,2.03E-16,0.203125202
+R.pomeroyi,2,Phosphorous,6.29E-17,0.062887292
+R.pomeroyi,2,Phosphorous,1.74E-16,0.174172594
+R.pomeroyi,2,Phosphorous,1.37E-16,0.137165919
+R.pomeroyi,10,Phosphorous,1.97E-16,0.19724009
+R.pomeroyi,10,Phosphorous,2.15E-16,0.215140455
+R.pomeroyi,10,Phosphorous,2.20E-16,0.219788444
+R.pomeroyi,50,Phosphorous,2.66E-16,0.266486018
+R.pomeroyi,50,Phosphorous,2.05E-16,0.205174612
+R.pomeroyi,50,Phosphorous,2.58E-16,0.257619939
+Pseudoalteromonas sp (26),0.1,Phosphorous,5.07E-16,0.506828581
+Pseudoalteromonas sp (26),0.1,Phosphorous,4.82E-16,0.481831857
+Pseudoalteromonas sp (26),0.1,Phosphorous,6.83E-16,0.682907873
+Pseudoalteromonas sp (26),0.1,Phosphorous,NA,NA
+Pseudoalteromonas sp (26),2,Phosphorous,4.06E-16,0.405567091
+Pseudoalteromonas sp (26),2,Phosphorous,5.81E-16,0.581211962
+Pseudoalteromonas sp (26),2,Phosphorous,7.26E-16,0.725765715
+Pseudoalteromonas sp (26),2,Phosphorous,NA,NA
+Pseudoalteromonas sp (26),10,Phosphorous,3.45E-16,0.345106358
+Pseudoalteromonas sp (26),10,Phosphorous,2.12E-16,0.212012848
+Pseudoalteromonas sp (26),10,Phosphorous,5.62E-16,0.561866235
+Pseudoalteromonas sp (26),10,Phosphorous,NA,NA
+Pseudoalteromonas sp (26),50,Phosphorous,5.28E-16,0.52828172
+Pseudoalteromonas sp (26),50,Phosphorous,4.87E-16,0.48674016
+Pseudoalteromonas sp (P2),0.1,Phosphorous,4.60E-16,0.45987835
+Pseudoalteromonas sp (P2),0.1,Phosphorous,5.33E-16,0.533442478
+Pseudoalteromonas sp (P2),0.1,Phosphorous,5.91E-16,0.591098818
+Pseudoalteromonas sp (P2),0.1,Phosphorous,NA,NA
+Pseudoalteromonas sp (P2),10,Phosphorous,5.08E-16,0.508391374
+Pseudoalteromonas sp (P2),10,Phosphorous,4.79E-16,0.478658971
+Pseudoalteromonas sp (P2),10,Phosphorous,4.46E-16,0.446386944
+Pseudoalteromonas sp (P2),25,Phosphorous,NA,NA
+Pseudoalteromonas sp (P2),25,Phosphorous,5.47E-16,0.547137554
+Pseudoalteromonas sp (P2),25,Phosphorous,7.40E-16,0.739515911
+Pseudoalteromonas sp (P2),25,Phosphorous,4.65E-16,0.465152833
+Dokonia sp,0.1,Sulfur,9.41E-17,0.094069444
+Dokonia sp,0.1,Sulfur,1.09E-16,0.108507937
+Dokonia sp,0.1,Sulfur,2.11E-16,0.210507206
+Dokonia sp,0.1,Sulfur,2.28E-16,0.228046875
+Dokonia sp,2,Sulfur,4.44E-16,0.443876511
+Dokonia sp,2,Sulfur,NA,NA
+Dokonia sp,2,Sulfur,5.26E-17,0.052574245
+Dokonia sp,2,Sulfur,6.58E-17,0.065788078
+Dokonia sp,2,Sulfur,1.34E-16,0.134028689
+Dokonia sp,2,Sulfur,1.04E-16,0.104033024
+Dokonia sp,10,Sulfur,1.14E-16,0.113554643
+Dokonia sp,10,Sulfur,8.94E-17,0.089384677
+Dokonia sp,10,Sulfur,7.79E-17,0.077880482
+Dokonia sp,10,Sulfur,8.92E-17,0.089196429
+Dokonia sp,10,Sulfur,3.33E-17,0.033318798
+Dokonia sp,10,Sulfur,2.56E-16,0.256045627
+Dokonia sp,10,Sulfur,6.83E-17,0.068307692
+Dokonia sp,25,Sulfur,7.62E-17,0.076176881
+Dokonia sp,25,Sulfur,7.72E-17,0.077208882
+Dokonia sp,25,Sulfur,1.14E-16,0.114472917
+Dokonia sp,25,Sulfur,9.75E-17,0.0975
+Dokonia sp,25,Sulfur,1.28E-16,0.127767066
+Dokonia sp,25,Sulfur,2.36E-16,0.23615625
+Dokonia sp,50,Sulfur,6.21E-17,0.062098655
+Dokonia sp,50,Sulfur,6.61E-17,0.066056781
+Dokonia sp,50,Sulfur,6.54E-17,0.065416799
+R.pomeroyi,0.1,Sulfur,NA,NA
+R.pomeroyi,0.1,Sulfur,1.51E-16,0.150820144
+R.pomeroyi,0.1,Sulfur,2.13E-16,0.212868798
+R.pomeroyi,2,Sulfur,1.48E-16,0.148256731
+R.pomeroyi,2,Sulfur,1.11E-16,0.111111895
+R.pomeroyi,2,Sulfur,1.38E-16,0.137735445
+R.pomeroyi,2,Sulfur,1.43E-16,0.142532299
+R.pomeroyi,10,Sulfur,9.32E-17,0.093205692
+R.pomeroyi,10,Sulfur,1.43E-16,0.142879515
+R.pomeroyi,10,Sulfur,1.34E-16,0.134147727
+R.pomeroyi,50,Sulfur,2.23E-16,0.22295097
+R.pomeroyi,50,Sulfur,1.40E-16,0.139947712
+R.pomeroyi,50,Sulfur,1.56E-16,0.15572
+Pseudoalteromonas sp (26),0.1,Sulfur,1.79E-16,0.178567797
+Pseudoalteromonas sp (26),0.1,Sulfur,3.37E-16,0.337441336
+Pseudoalteromonas sp (26),0.1,Sulfur,3.40E-16,0.340275591
+Pseudoalteromonas sp (26),0.1,Sulfur,NA,NA
+Pseudoalteromonas sp (26),2,Sulfur,2.95E-16,0.295153509
+Pseudoalteromonas sp (26),2,Sulfur,1.93E-16,0.19283906
+Pseudoalteromonas sp (26),2,Sulfur,3.91E-16,0.390995575
+Pseudoalteromonas sp (26),2,Sulfur,NA,NA
+Pseudoalteromonas sp (26),10,Sulfur,2.02E-16,0.20160473
+Pseudoalteromonas sp (26),10,Sulfur,1.70E-16,0.169547697
+Pseudoalteromonas sp (26),10,Sulfur,2.41E-16,0.241024476
+Pseudoalteromonas sp (26),10,Sulfur,NA,NA
+Pseudoalteromonas sp (26),50,Sulfur,2.20E-16,0.21972334
+Pseudoalteromonas sp (26),50,Sulfur,1.89E-16,0.189127921
+Pseudoalteromonas sp (P2),0.1,Sulfur,1.99E-16,0.198767365
+Pseudoalteromonas sp (P2),0.1,Sulfur,2.50E-16,0.250196493
+Pseudoalteromonas sp (P2),0.1,Sulfur,2.11E-16,0.210630738
+Pseudoalteromonas sp (P2),0.1,Sulfur,NA,NA
+Pseudoalteromonas sp (P2),10,Sulfur,1.89E-16,0.189109634
+Pseudoalteromonas sp (P2),10,Sulfur,2.27E-16,0.227208693
+Pseudoalteromonas sp (P2),10,Sulfur,1.50E-16,0.150016573
+Pseudoalteromonas sp (P2),25,Sulfur,NA,NA
+Pseudoalteromonas sp (P2),25,Sulfur,2.13E-16,0.212909411
+Pseudoalteromonas sp (P2),25,Sulfur,2.97E-16,0.296969226
+Pseudoalteromonas sp (P2),25,Sulfur,NA,NA
+Dokonia sp,0.1,S:P ratio,0.606245767,0.606245767
+Dokonia sp,0.1,S:P ratio,0.690763206,0.690763206
+Dokonia sp,0.1,S:P ratio,1.039280168,1.039280168
+Dokonia sp,0.1,S:P ratio,0.763005553,0.763005553
+Dokonia sp,2,S:P ratio,0.756450206,0.756450206
+Dokonia sp,2,S:P ratio,1.909284508,1.909284508
+Dokonia sp,2,S:P ratio,0.729667699,0.729667699
+Dokonia sp,2,S:P ratio,0.901835443,0.901835443
+Dokonia sp,2,S:P ratio,0.734335742,0.734335742
+Dokonia sp,2,S:P ratio,1.501696277,1.501696277
+Dokonia sp,10,S:P ratio,1.032839627,1.032839627
+Dokonia sp,10,S:P ratio,0.867850503,0.867850503
+Dokonia sp,10,S:P ratio,0.658338813,0.658338813
+Dokonia sp,10,S:P ratio,0.937598745,0.937598745
+Dokonia sp,10,S:P ratio,0.305284804,0.305284804
+Dokonia sp,10,S:P ratio,1.966097101,1.966097101
+Dokonia sp,10,S:P ratio,0.46115755,0.46115755
+Dokonia sp,25,S:P ratio,0.558963762,0.558963762
+Dokonia sp,25,S:P ratio,0.465001868,0.465001868
+Dokonia sp,25,S:P ratio,0.680919519,0.680919519
+Dokonia sp,25,S:P ratio,0.727655021,0.727655021
+Dokonia sp,25,S:P ratio,1.143474883,1.143474883
+Dokonia sp,25,S:P ratio,1.401418467,1.401418467
+Dokonia sp,50,S:P ratio,0.57532829,0.57532829
+Dokonia sp,50,S:P ratio,0.670313693,0.670313693
+Dokonia sp,50,S:P ratio,0.579196143,0.579196143
+R.pomeroyi,0.1,S:P ratio,NA,NA
+R.pomeroyi,0.1,S:P ratio,0.765585427,0.765585427
+R.pomeroyi,0.1,S:P ratio,0.869193693,0.869193693
+R.pomeroyi,2,S:P ratio,0.729878565,0.729878565
+R.pomeroyi,2,S:P ratio,1.766841797,1.766841797
+R.pomeroyi,2,S:P ratio,0.790798611,0.790798611
+R.pomeroyi,2,S:P ratio,1.039123271,1.039123271
+R.pomeroyi,10,S:P ratio,0.472549431,0.472549431
+R.pomeroyi,10,S:P ratio,0.664122027,0.664122027
+R.pomeroyi,10,S:P ratio,0.610349319,0.610349319
+R.pomeroyi,50,S:P ratio,0.836632898,0.836632898
+R.pomeroyi,50,S:P ratio,0.682090786,0.682090786
+R.pomeroyi,50,S:P ratio,0.604456318,0.604456318
+Pseudoalteromonas sp (26),0.1,S:P ratio,0.352323849,0.352323849
+Pseudoalteromonas sp (26),0.1,S:P ratio,0.700330066,0.700330066
+Pseudoalteromonas sp (26),0.1,S:P ratio,0.498274517,0.498274517
+Pseudoalteromonas sp (26),0.1,S:P ratio,1.491799817,1.491799817
+Pseudoalteromonas sp (26),2,S:P ratio,0.727755074,0.727755074
+Pseudoalteromonas sp (26),2,S:P ratio,0.331787837,0.331787837
+Pseudoalteromonas sp (26),2,S:P ratio,0.538735252,0.538735252
+Pseudoalteromonas sp (26),2,S:P ratio,0.446392419,0.446392419
+Pseudoalteromonas sp (26),10,S:P ratio,0.584181442,0.584181442
+Pseudoalteromonas sp (26),10,S:P ratio,0.799704823,0.799704823
+Pseudoalteromonas sp (26),10,S:P ratio,0.428971276,0.428971276
+Pseudoalteromonas sp (26),10,S:P ratio,0.585520369,0.585520369
+Pseudoalteromonas sp (26),50,S:P ratio,0.415920771,0.415920771
+Pseudoalteromonas sp (26),50,S:P ratio,0.388560337,0.388560337
+Pseudoalteromonas sp (P2),0.1,S:P ratio,0.432217269,0.432217269
+Pseudoalteromonas sp (P2),0.1,S:P ratio,0.469022441,0.469022441
+Pseudoalteromonas sp (P2),0.1,S:P ratio,0.356337607,0.356337607
+Pseudoalteromonas sp (P2),0.1,S:P ratio,NA,NA
+Pseudoalteromonas sp (P2),10,S:P ratio,0.37197648,0.37197648
+Pseudoalteromonas sp (P2),10,S:P ratio,0.474677602,0.474677602
+Pseudoalteromonas sp (P2),10,S:P ratio,0.33606846,0.33606846
+Pseudoalteromonas sp (P2),25,S:P ratio,0.561052808,0.561052808
+Pseudoalteromonas sp (P2),25,S:P ratio,0.389133243,0.389133243
+Pseudoalteromonas sp (P2),25,S:P ratio,0.401572463,0.401572463
+Pseudoalteromonas sp (P2),25,S:P ratio,NA,NA
