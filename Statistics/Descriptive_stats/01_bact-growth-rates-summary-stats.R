@@ -7,8 +7,6 @@
 
 
 library(tidyverse)
-library(purrr)
-library(broom)
 
 # load the data
 growth <-read_csv("Data/01_Bact-growth-rates-tidydata.csv")
