@@ -1,13 +1,5 @@
 # Marine_het_bacteria-copper
 
-Repository for data and scripts for Frontiers in Marine Sciences publication
+Data and code for Posacka, AM, Semeniuk, DS, Maldonado, MT. Effects of copper availability on marine heterotrophic bacteria (submitted).
 
-Datasets:
-
-* Bacterial growth rates ([Bact_growth-rates.csv]())
-* Phosphorous normalized metals ([Bact_phosph-metals.csv]())
-
-r_script               | Dataset     | Generates  | Output data    
----------------------- | ----------------|---------- |----------
-Fig_1-bact-Cu-growth.R | [Bact_growth-rates.csv](), [Bact_phosph-metals.csv]() | Fig.1 | Tiff
-Fig_2-bact-CNSP.R      | []()    | Fig.2 | Tiff
+For information on metadata and how this repository is organized refer to the [Documentation.Rmd](https://github.com/aposacka/Marine_het_bacteria-copper/blob/master/Docs/Documentation.Rmd)
