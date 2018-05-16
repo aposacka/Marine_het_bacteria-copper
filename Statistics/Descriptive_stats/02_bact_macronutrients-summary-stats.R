@@ -7,20 +7,18 @@
 
 library(tidyverse)
 
-data <- read_csv("Data/02_Bact-CNSP-tidydata.csv")
-
-data$Cu_level <- as.factor(data$Cu_level)
-data$Strain<- as.factor(data$Strain)
-data$Macronutrient <- as.factor(data$Macronutrient)
+data <- read.csv("Data/02_Bact-CNSP-tidydata.csv")
 glimpse(data)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+head(data <- na.omit(data))
+
 Descr_stats <-data %>%
-	select(Strain,Macronutrient,Quota_num,Cu_level)%>%
+	select(Strain,Macronutrient,Quota_fmol_cell,Cu_level)%>%
 	group_by(Macronutrient,Strain,Cu_level)%>%
-	summarise(mean_quota =mean(Quota_num, na.rm= TRUE), 
-						stdev=sd(Quota_num, na.rm= TRUE),
+	summarise(mean_quota =mean(Quota_fmol_cell, na.rm= TRUE), 
+						stdev=sd(Quota_fmol_cell, na.rm= TRUE),
 						SEM= stdev/sqrt(n()),
 						(n()))
 

@@ -1,0 +1,40 @@
+---
+title: "Documentation"
+author: "Anna Posacka"
+date: "May 16, 2018"
+output: html_document
+---
+
+Data and code for Posacka, AM, Semeniuk, DS, Maldonado, MT. Effects of copper availability on marine heterotrophic bacteria (submitted).
+
+Here is a list of all of the spreadsheets used to generate figures, tables and to test for statistical significance:
+
+* Bacterial growth rates in response to Cu ([Bact_growth-rates.csv]())
+* Phosphorous normalized metals in response to Cu ([Bact_phosph-metals.csv]())
+* Macronutrient quotas and ratios in response to Cu ([02_Bact-CNSP-tidydata.csv]())
+* Carbon metabolic rates of bacteria in response to Cu ([03_Bact-carb-metab-tidydata.csv]())
+* Copper quotas of bacteria and those published for eukaryotic algae along with the inorganic Cu conditions under which these species were cultured algae([05_Cu-quotas-lit-aquil-tidydata.csv]())
+
+This table contains the key to variables for each dataset in the folder "Data"
+
+Spreadsheet                         | Variable     | Variable key         | Units
+------------------------------------|--------------|----------------------|-------
+01_Bact_growth-rates-tidydata.csv   |
+01_Bact_metals-P-norm-tidydata.csv  |
+02_Bact-CNSP-tidydata.csv           |
+03_Bact-carb-metab-tidydata.csv     |
+05_Cu-quotas-lit-aquil-tidydata.csv |
+
+This table explains what each code generates and what dataset it uses. 
+
+r_script               | Dataset                                               | Generates    
+---------------------- | ------------------------------------------------------|-----------
+Fig1_Bact-Cu-growth.R | [01_Bact_growth-rates-tidydata.csv](), [01_Bact_metals-P-norm-tidydata.csv]() | Fig.1 
+Fig2_Bact-CNSP.R      | [02_Bact-CNSP-tidydata.csv]() | Fig.2                                
+Fig3_Bact-C-metabolism.R | [03_Bact-carb-metab-tidydata.csv]() | Fig.3
+Fig4_Cu-quotas-bact-vs-euk-algae.R | [05_Cu-quotas-lit-aquil-tidydata.csv]() | Fig.4
+Fig4_Bact-vs-phytos-Cu-quotas-stats.Rmd | [05_Cu-quotas-lit-aquil-tidydata.csv] | A markdown file reporting on statistical tests for data in Fig.4
+Fig5_Cu-quotas-vs-inorg-Cu-Aquil.R | [05_Cu-quotas-lit-aquil-tidydata.csv]() | Fig.5
+01_bact-growth-rates-summary-stats.R |  | CSV file with Means, STdev, SE and n
+02_bact-macronutrients-summary-stats.R | CSV file with Means, StDev, SE and n
+
