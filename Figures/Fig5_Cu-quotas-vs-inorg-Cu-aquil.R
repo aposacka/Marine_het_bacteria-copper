@@ -32,7 +32,7 @@ phytos<-dat%>%
 	annotate("segment", x = 13.74, xend = 12, y = 6, yend = 6,
 					 arrow=arrow(ends="both", angle=90,length=unit(.2,"cm")))+
 	annotate("text", x = 12.8, y = 7.0, label="log [Cu'] range in seawater", size=4.5) +
-	annotate("text", x = 14.0, y = 12.5, label="Phytoplankton", fontface = 2,size=4.5) +
+	annotate("text", x = 13.7, y = 12.5, label="Eukaryotic Phytoplankton", fontface = 2,size=4.5) +
 	scale_x_reverse(name ="-log([Cu'])",expand=c(0,0))+
 	scale_y_continuous(breaks = c(0,1.5,3,4.5,6,7.5,9,10.5,12),limits = c(0,12.6))+
 	ylab(expression("Cu:C" ~(mu~mol:mol)))+
@@ -59,7 +59,7 @@ bact<-dat%>%
 	annotate("segment", x = 13.74, xend = 12, y = 6, yend = 6,
 					 arrow=arrow(ends="both", angle=90,length=unit(.2,"cm")))+
 	annotate("text", x = 12.8, y = 7.0, label="log [Cu'] range in seawater", size=4.5) +
-	annotate("text", x = 13.5, y = 12.5, label="Heterotrophic bacteria", fontface = 2,size=4.5) +
+	annotate("text", x = 13.7, y = 12.5, label="Heterotrophic bacteria", fontface = 2,size=4.5) +
 	scale_x_reverse(name="-log([Cu'])",expand=c(0,0))+
 	ylab(expression("Cu:C" ~(mu~mol:mol)))+
 	scale_y_continuous(breaks = c(0,1.5,3,4.5,6,7.5,9,10.5,12),limits = c(0,12.6))+

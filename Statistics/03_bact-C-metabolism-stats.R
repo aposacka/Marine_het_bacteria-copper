@@ -8,8 +8,9 @@
 library(tidyverse)
 library(broom)
 
-data <-read_csv("C:/Users/Ania/Bact_resp/Bact_Growth-Efficiency/Bact_carb-metab-with-errors-final.csv")
-glimpse(data)
+data <-read.csv("Data/03_Bact_carb-metab-data.csv")
+
+# glimpse(data)
 
 #-----------------------
 # Summary statistics
@@ -25,7 +26,7 @@ decr_stats <- data%>%
             mean_BGE=mean(BGE),BGEprop_err=sqrt(sum(BGE_error)^2)/length(BGE_error))
 
 
-
+#save to csv
 write_csv(decr_stats,"03_Bact-C-metabolism-descr-stats.csv")
 
 #-----------------
@@ -96,4 +97,31 @@ Bartlett_results <-data_nested %>%
 
 # saving data as csv
 write_csv(ANOVA_results,"Carb_metab-ANOVA.csv")
+
+#-----------------------------------------
+# Post hod Bonferroni
+#-----------------------------------------
+
+
+data_nested <- stat_dat %>%
+  group_by(Strain,Metabolism) %>%
+  nest()
+
+# apply nested pairwise t test
+
+Bonferroni <- function(df) {
+  pairwise.t.test(df$Rate,df$Cu_level,p.adj= "bonf",data=df)
+}
+
+data_nested<-data_nested %>%
+  mutate(nested_Bonferroni=map(data,Bonferroni))
+
+data_nested <- data_nested%>%
+  mutate(tidy_Bonferroni= map(nested_Bonferroni,tidy))
+
+Bonferroni_results <- data_nested%>%
+  select(Strain,Metabolism,tidy_Bonferroni) %>%
+  unnest(tidy_Bonferroni)
+
+write_csv(Bonferroni_results,"Bact_carb-metab-post-hoc.csv")
 write_csv(Bartlett_results,"Carb_metab-Bartlett.csv")
