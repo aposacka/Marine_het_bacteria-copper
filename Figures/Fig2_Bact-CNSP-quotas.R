@@ -5,12 +5,13 @@
 library(tidyverse)
 library(cowplot)
 
-dat <- read_csv("Data/02_Bact-CNSP-tidydata.csv")
+dat <- read.csv("Data/02_Bact-CNSP-tidydata.csv")
 
-dat$Cu_level <- as.factor(dat$Cu_level)
-dat$Strain <- as.factor(dat$Strain)
-dat$Macronutrient <-as.factor(dat$Macronutrient)
-
+### NEED TO FIX Pseudoalteromonas name!!!!!!!!!!
+glimpse(dat)
+levels(dat$Strain)
+levels(dat$Strain) <- gsub("Pseudoalteromonas sp (26)","Pseudoalt sp. (P26)", levels(dat$Strain))
+write.csv(dat,"02_Bact-CNSP-tidydata.csv")
 
 # setting the levels (order) of factors for plotting
 dat$Strain<- factor(dat$Strain, levels = c("Dokdonia sp","R.pomeroyi",
@@ -23,6 +24,7 @@ dat$Macronutrient <- factor(dat$Macronutrient,
 														 levels = c("Carbon","Nitrogen","Phosphorous","Sulfur",
 				 									 					 "C:N ratio", "S:P ratio"))
 
+levels(dat$Strain)
 #----------------------------
 # Carbon quotas
 #----------------------------
@@ -31,7 +33,7 @@ levels(dat$Macronutrient)
 p1 <- dat%>%
   filter(Macronutrient == "Carbon")%>%
 	group_by(Strain,Cu_level)%>%
-	ggplot(aes(x = Cu_level,y = Quota_num,color = Strain))+
+	ggplot(aes(x = Cu_level,y = Quota_fmol_cell,color = Strain))+
 	stat_summary(fun.y = mean, geom = "point", pch = "_", size = 7)+
 	geom_point(alpha=1/3,size=3)+
   scale_color_manual(values=c("#009E73","#666666", "#E69F00","#0072B2"))+
@@ -51,7 +53,7 @@ p1 <- dat%>%
 				axis.title.y = element_text(size=11),
 				legend.text = element_text(size=11))
 
-
+p1
 #--------------------------
 # Nitrogen
 #--------------------------
@@ -59,7 +61,7 @@ p1 <- dat%>%
 p2 <- dat%>%
   filter(Macronutrient == "Nitrogen")%>%
 	group_by(Strain,Cu_level)%>%
-	ggplot(aes(x = Cu_level,y = Quota_num, color = Strain, group = 1))+
+	ggplot(aes(x = Cu_level,y = Quota_fmol_cell, color = Strain, group = 1))+
 	stat_summary(fun.y = mean, geom = "point",pch = "_", size = 7)+
 	geom_point(alpha=1/3,size=3)+
   scale_color_manual(values=c("#009E73","#666666","#E69F00","#0072B2"))+
@@ -86,7 +88,7 @@ p2 <- dat%>%
 p3 <- dat%>%
   filter(Macronutrient == "Phosphorous")%>%
 	group_by(Strain,Cu_level)%>%
-  ggplot(aes(x=Cu_level,y=Quota_num, color = Strain))+
+  ggplot(aes(x=Cu_level,y=Quota_fmol_cell, color = Strain))+
   stat_summary(fun.y=mean, geom="point",pch = "_", size = 7)+
   scale_color_manual(values=c("#009E73","#666666", "#E69F00","#0072B2"))+
   geom_point(alpha=1/3,size=3)+
@@ -113,7 +115,7 @@ p3 <- dat%>%
 p4 <- dat%>%
   filter(Macronutrient == "Sulfur")%>%
 	group_by(Strain,Cu_level)%>%
-  ggplot(aes(x=Cu_level,y = Quota_num, color = Strain, group = 1))+
+  ggplot(aes(x=Cu_level,y = Quota_fmol_cell, color = Strain, group = 1))+
   stat_summary(fun.y=mean, geom="point", pch = "_", size = 7)+
   geom_point(alpha=1/3,size=3)+
   scale_color_manual(values=c("#009E73", "#666666", "#E69F00","#0072B2"))+
@@ -140,7 +142,7 @@ p4 <- dat%>%
 p5 <- dat%>%
   filter(Macronutrient == "C:N ratio")%>%
 	group_by(Strain,Cu_level)%>%
-  ggplot(aes(x=Cu_level,y = Quota_num, color = Strain, group = 1))+
+  ggplot(aes(x=Cu_level,y = Quota_fmol_cell, color = Strain, group = 1))+
   stat_summary(fun.y=mean, geom="point",pch = "_",size = 7)+
   scale_color_manual(values=c("#009E73", "#666666", "#E69F00","#0072B2"))+
   geom_point(alpha=1/3,size=3)+
@@ -170,7 +172,7 @@ p5 <- dat%>%
 p6 <- dat%>%
   filter(Macronutrient == "S:P ratio")%>%
 	group_by(Strain,Cu_level)%>%
-  ggplot(aes(x = Cu_level,y = Quota_num, color = Strain))+
+  ggplot(aes(x = Cu_level,y = Quota_fmol_cell, color = Strain))+
   stat_summary(fun.y = mean, geom = "point",pch = "_", size = 7)+
   geom_point(alpha=1/3,size=3)+
   scale_color_manual(values = c("#009E73", "#666666", "#E69F00","#0072B2"))+
