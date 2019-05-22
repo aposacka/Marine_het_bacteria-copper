@@ -5,7 +5,7 @@ date: "May 16, 2018"
 output: html_document
 ---
 
-Data and code for Posacka, AM, Semeniuk, DS, Maldonado, MT. Effects of copper availability on marine heterotrophic bacteria (submitted).
+Data and code for Posacka, AM, Semeniuk, DS, Maldonado, MT. Effects of copper availability on marine heterotrophic bacteria (submitted). test
 
 Here is a list of all of the spreadsheets used to generate figures, tables and to test for statistical significance:
 
