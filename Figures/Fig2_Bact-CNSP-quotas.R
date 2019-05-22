@@ -7,16 +7,11 @@ library(cowplot)
 
 dat <- read.csv("Data/02_Bact-CNSP-tidydata.csv")
 
-### NEED TO FIX Pseudoalteromonas name!!!!!!!!!!
-glimpse(dat)
-levels(dat$Strain)
-levels(dat$Strain) <- gsub("Pseudoalteromonas sp (26)","Pseudoalt sp. (P26)", levels(dat$Strain))
-write.csv(dat,"02_Bact-CNSP-tidydata.csv")
 
 # setting the levels (order) of factors for plotting
 dat$Strain<- factor(dat$Strain, levels = c("Dokdonia sp","R.pomeroyi",
 																						 "Pseudoalteromonas sp (P2)",
-																						 "Pseudoalteromonas sp (P26)"))
+																						 "Pseudoalteromonas sp (26)"))
 
 dat$Cu_level <- factor(dat$Cu_level, levels = c("0.6","2","10","25","50"))
 
