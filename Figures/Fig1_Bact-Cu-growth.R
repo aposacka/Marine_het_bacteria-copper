@@ -41,23 +41,24 @@ p1 <-metals%>%
   filter(Me_P == "Cu_P")%>%
 	group_by(Strain,Cu_level)%>%
 	ggplot(aes(x = Cu_level,y = Quota,color = Strain))+
-	geom_jitter(width = 0.1,size = 1.5, alpha = 1/3)+
-	stat_summary(fun.y = mean, geom = "point", pch = "_", size = 6)+
+	geom_jitter(width = 0.1,size = 3, alpha = 1/2)+
+	stat_summary(fun.y = mean, geom = "point", pch = "_", size = 10)+
   scale_color_manual(values = c("#009E73", "#666666", "#E69F00","#0072B2"))+ 
-  annotate("rect", xmin=1.8, xmax=3.3, ymin=0.0, ymax=0.25, alpha=.3, fill="gray")+
+  #annotate("rect", xmin=1.8, xmax=3.3, ymin=0.0, ymax=0.25, alpha=.4, fill="gray")+
   scale_y_continuous(limits=c(0,0.25),expand=c(0,0))+
 	facet_wrap(~Strain, scales = "free_y",nrow = 1)+
 	ylab(expression(atop("Cu quota", 
 								 paste("(mmol Cu:mol P)"))))+
   theme_bw()+
   theme(legend.position = "none",
-				axis.title = element_blank(),
 				strip.text = element_blank(),
+				axis.title.x = element_blank(),
 				panel.grid.major.x = element_blank(), 
 				panel.grid.minor.x = element_blank(),
 				panel.grid.major.y = element_blank(),
 				panel.grid.minor.y = element_blank(),
-  			axis.text = element_text(size=6))
+  			axis.text = element_text(size=10),
+				axis.title.y = element_text(size=11))
 
 #------------------------------------------------------------------------
 # growth rates [top]
@@ -66,24 +67,25 @@ p1 <-metals%>%
 p2 <- subset%>%
   group_by(Strain,Cu_total)%>%
   ggplot(aes(x = Cu_total,y = mu_day,color = Strain))+
-  geom_jitter( width = 0.1, size = 1.5, alpha = 1/3)+
-  stat_summary(fun.y=mean, geom="point", pch = "_", size = 6)+
+  geom_jitter( width = 0.1, size = 3, alpha = 1/2)+
+  stat_summary(fun.y=mean, geom="point", pch = "_", size = 10)+
   scale_color_manual(values=c("#009E73", "#666666", "#E69F00","#0072B2"))+
 #                     labels=c("Dokd-P16", "R.pomeroyi DSS-3", "PAlt-P2", "PAlt-P26"))+
-  annotate("rect", xmin=1.8, xmax=3.3, ymin=0.0, ymax=23, alpha=.3, fill="gray")+
+#  annotate("rect", xmin=1.8, xmax=3.3, ymin=0.0, ymax=23, alpha=.3, fill="gray")+
   scale_y_continuous(limits=c(0,23),expand=c(0,0))+
   facet_wrap(~Strain, scales = "free_y",nrow = 1)+
-  ylab ("Growth rate (d-1)")+
+  ylab ("Growth rate"~ (d^{-1}))+
   theme_bw()+
-  theme(legend.position = "top",
-        legend.text = element_text(size = 6),
-        axis.title = element_blank(),
+  theme(legend.position = "none",
+        #axis.title = element_blank(),
+        axis.title.x = element_blank(),
         strip.text = element_blank(),
         panel.grid.major.x = element_blank(), 
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_blank(),
         panel.grid.minor.y = element_blank(),
-        axis.text = element_text(size=6))
+        axis.text = element_text(size=10),
+        axis.title.y = element_text(size=11))
 
 #------------------------------------------------------------------
 # saving the plot
@@ -91,7 +93,6 @@ p2 <- subset%>%
 plot <-plot_grid(p2,p1,align = "v",nrow=2)
 
 save_plot (filename="Fig1_Bact-Cu-growth.tiff", plot= plot,
-           base_height= 2, base_width=3,
-           base_aspect_ratio = 1.3)
+           base_height= 4, base_width=9)
 
 

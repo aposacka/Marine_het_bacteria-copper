@@ -46,7 +46,7 @@ phytos<-dat%>%
 				axis.title = element_text(size=14),
 				axis.text = element_text(size=14),
 				legend.text = element_text(size=10),
-				legend.position = "none")
+				legend.position = "bottom")
 
 
 #-------------Het.bacteria-------------------------------------
@@ -73,12 +73,13 @@ bact<-dat%>%
 				axis.title = element_text(size=14),
 				axis.text = element_text(size=14),
 				legend.text = element_text(size=10),
-				legend.position = "none")
+				legend.position = "bottom")
 
 #------Saving-the-plot---------------------------------------------
 
 plot <-plot_grid(phytos,bact,
 								 labels = c("A", "B"),label_size = 12, align = "h")
 
+save_plot(filename = "Fig5_bact.png", plot = bact, base_height = 4, base_width = 9.5 )
 
-save_plot (filename="Fig5_Cu-quotas-vs-inorg-Cu-published.tiff", plot= plot, base_height= 4, base_width =9.5)
+save_plot (filename="Fig5_Cu-quotas-vs-inorg-Cu-published.png", plot= plot, base_height= 4, base_width =9.5)

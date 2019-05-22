@@ -18,5 +18,6 @@ tidy_carbs <-data%>%
 
 # remove missing values from the dataset
 tidy_carbs <- na.omit(tidy_carbs)
+glimpse(tidy_carbs)
 
 write.csv(tidy_carbs,"03_Bact-carb-metab-tidydata.csv")
