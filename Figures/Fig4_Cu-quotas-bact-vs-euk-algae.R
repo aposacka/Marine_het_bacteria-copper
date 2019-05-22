@@ -35,16 +35,16 @@ data%>%
 
 p1 <- data%>%
 	filter(Cu_C<15, Domain %in% c("Euk_algae","Het_bacteria"))%>%
-	ggplot(aes(x = Domain, y = Cu_C,color = Domain))+
-	geom_boxplot(outlier.shape = NA)+
-	geom_jitter(width = 0.05, size = 3, alpha = 1/2)+
-	scale_color_manual(values = c("#00AFBB", "#E69F00"))+
-  scale_x_discrete(labels = c("Eukaryotic \n algae", "Heterotrophic \n bacteria"))+
+	ggplot(aes(x = Domain, y = Cu_C,fill = Domain))+
+	geom_boxplot()+
+	#geom_jitter(width = 0.05, size = 3, alpha = 1/2)+
+	scale_fill_manual(values = c("#00AFBB", "#CCCCCC"))+
+  scale_x_discrete(labels = c("Eukaryotic \n phytoplankton", "Heterotrophic \n bacteria"))+
 	ylab(expression("Cu:C" ~(mu~mol:mol)))+
   annotate("text", x = 2.12, y = 12.5, label = "Levene, p = 0.029", fontface = 1,size = 4) +
   annotate("text", x = 1.8, y = 11.5, label = "Wilcoxon (two-sided), p = 0.095", fontface = 1,size = 4) +
   annotate("text", x = 1, y = 6, label = "Median = 1.72", fontface = 1,size = 4.5, color = "#00AFBB")+ 
-  annotate("text", x = 2, y = 6, label = "Median = 1.11", fontface = 1,size = 4.5, color = "#E69F00") +
+  annotate("text", x = 2, y = 6, label = "Median = 1.11", fontface = 1,size = 4.5, color = "#333333") +
   ylim(0,12.5)+
 	theme_bw()+
 	theme(panel.grid.major.x = element_blank(), 
@@ -53,7 +53,7 @@ p1 <- data%>%
 				panel.grid.minor.y = element_blank(),
 				axis.title.y= element_text(size = 12),
 				axis.title.x= element_blank(),
-				axis.text.x = element_text(colour = c("#00AFBB", "#E69F00")),
+				axis.text.x = element_text(colour = c("#00AFBB", "#333333")),
 				axis.text = element_text(size = 12),
 				legend.text = element_text(size = 10),
 				legend.position = "none")
